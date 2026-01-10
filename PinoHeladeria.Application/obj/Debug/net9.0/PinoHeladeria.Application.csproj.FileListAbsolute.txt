@@ -1,0 +1,15 @@
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\bin\Debug\net9.0\PinoHeladeria.Application.deps.json
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\bin\Debug\net9.0\PinoHeladeria.Application.dll
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\bin\Debug\net9.0\PinoHeladeria.Application.pdb
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\bin\Debug\net9.0\PinoHeladeria.Domain.dll
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\bin\Debug\net9.0\PinoHeladeria.Domain.pdb
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\PinoHeladeria.Application.csproj.AssemblyReference.cache
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\PinoHeladeria.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\PinoHeladeria.Application.AssemblyInfoInputs.cache
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\PinoHeladeria.Application.AssemblyInfo.cs
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\PinoHeladeria.Application.csproj.CoreCompileInputs.cache
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\PinoHela.D4B3FD0F.Up2Date
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\PinoHeladeria.Application.dll
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\refint\PinoHeladeria.Application.dll
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\PinoHeladeria.Application.pdb
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Application\obj\Debug\net9.0\ref\PinoHeladeria.Application.dll

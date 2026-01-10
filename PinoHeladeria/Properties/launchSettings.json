@@ -1,0 +1,25 @@
+﻿{
+    "$schema": "https://json.schemastore.org/launchsettings.json",
+    "profiles": {
+        "http": {
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "launchBrowser": true,
+            "launchUrl": "scalar/v1",
+            "applicationUrl": "http://localhost:5281",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        },
+        "https": {
+            "commandName": "Project",
+            "dotnetRunMessages": true,
+            "launchBrowser": true, // <--- AHORA SÍ SE ABRIRÁ
+            "launchUrl": "scalar/v1", // <--- ESTA ES LA RUTA DE SCALAR
+            "applicationUrl": "https://localhost:7106;http://localhost:5281",
+            "environmentVariables": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            }
+        }
+    }
+}

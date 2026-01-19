@@ -1,0 +1,58 @@
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.deps.json
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.runtimeconfig.json
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.dll
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.pdb
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Application.dll
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Domain.dll
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Application.pdb
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Domain.pdb
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.csproj.AssemblyReference.cache
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.AssemblyInfoInputs.cache
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.AssemblyInfo.cs
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.csproj.CoreCompileInputs.cache
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHela.F1E94429.Up2Date
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.dll
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\refint\PinoHeladeria.Infrastucture.dll
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.pdb
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.genruntimeconfig.cache
+C:\Users\DELL LATITUDE 5400\OneDrive - UNAN-Managua\Escritorio\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\ref\PinoHeladeria.Infrastucture.dll
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.deps.json
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.runtimeconfig.json
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.dll
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.pdb
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Application.dll
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Domain.dll
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Application.pdb
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Domain.pdb
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.csproj.AssemblyReference.cache
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.GeneratedMSBuildEditorConfig.editorconfig
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.AssemblyInfoInputs.cache
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.AssemblyInfo.cs
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.csproj.CoreCompileInputs.cache
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHela.F1E94429.Up2Date
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.dll
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\refint\PinoHeladeria.Infrastucture.dll
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.pdb
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.genruntimeconfig.cache
+C:\UNI\Programacion 2\PinoHeladeria\PinoHeladeria.Infrastucture\obj\Debug\net9.0\ref\PinoHeladeria.Infrastucture.dll
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.deps.json
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.runtimeconfig.json
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.dll
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Infrastucture.pdb
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Application.dll
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Domain.dll
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Application.pdb
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\bin\Debug\net9.0\PinoHeladeria.Domain.pdb
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.csproj.AssemblyReference.cache
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.GeneratedMSBuildEditorConfig.editorconfig
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.AssemblyInfoInputs.cache
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.AssemblyInfo.cs
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.csproj.CoreCompileInputs.cache
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.sourcelink.json
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHela.F1E94429.Up2Date
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.dll
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\refint\PinoHeladeria.Infrastucture.dll
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.pdb
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\PinoHeladeria.Infrastucture.genruntimeconfig.cache
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Infrastucture\obj\Debug\net9.0\ref\PinoHeladeria.Infrastucture.dll

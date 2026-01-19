@@ -1,0 +1,12 @@
+{
+  "Version": 1,
+  "Hash": "mSPA4iXv4WUWEc427ZXMaYb+H96fMZtbH6ERxwzRUiA=",
+  "Source": "PinoHeladeria.API",
+  "BasePath": "_content/PinoHeladeria.API",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": [],
+  "Endpoints": []
+}

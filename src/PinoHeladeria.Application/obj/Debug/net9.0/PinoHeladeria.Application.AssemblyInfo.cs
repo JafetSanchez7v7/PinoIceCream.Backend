@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PinoHeladeria.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dca05199c16f0e456c083473789de6c431eca519")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb9eac1b5930f2b1464ca26a4546b30cecf39a45")]
 [assembly: System.Reflection.AssemblyProductAttribute("PinoHeladeria.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PinoHeladeria.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

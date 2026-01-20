@@ -6,9 +6,11 @@ using System.Threading.Tasks;
 
 namespace PinoHeladeria.Application.Interfaces
 {
-    public interface IUnitOfWork
+    public interface IUnitOfWork : IDisposable 
     {
         Task<int> SaveChangesAsync(CancellationToken cancellation = default);
-        
+        Task BeginTransactionAsync();
+        Task CommitTransactionAsync();
+        Task RollbackTransactionAsync();
     }
 }

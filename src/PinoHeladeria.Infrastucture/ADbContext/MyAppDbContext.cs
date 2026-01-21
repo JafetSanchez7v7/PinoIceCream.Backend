@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Storage;
 using Microsoft.Identity.Client;
 using PinoHeladeria.Application.Interfaces;
 using PinoHeladeria.Domain.Entities;
@@ -13,15 +14,19 @@ namespace PinoHeladeria.Infrastucture.AppDbContext
 {
     public class MyAppDbContext : DbContext,IUnitOfWork
     {
-        public MyAppDbContext(DbContextOptions<MyAppDbContext> options) : base(options)
+        private IDbContextTransaction _currentTransaction;
+
+        public MyAppDbContext(DbContextOptions<MyAppDbContext> options, IDbContextTransaction trans) : base(options)
         {
-           
+           _currentTransaction = trans;
         }
         public DbSet<Categories> Categories => Set<Categories>();
         public DbSet<Suppliers> Suppliers => Set<Suppliers>();
         public DbSet<Products> Products => Set<Products>();
         public DbSet<Inventories> Inventory => Set<Inventories>();
         public DbSet<Customers> Customers => Set<Customers>();
+        public DbSet<PurchaseDetails> PurchaseDetails => Set<PurchaseDetails>();
+        public DbSet<Purchases> Purchases => Set<Purchases>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Le decimos explícitamente qué columna es la PK
@@ -30,9 +35,51 @@ namespace PinoHeladeria.Infrastucture.AppDbContext
             modelBuilder.Entity<Products>().HasKey(p => p.ProductId);
             modelBuilder.Entity<Inventories>().HasKey(p => p.InventoryId);
             modelBuilder.Entity<Customers>().HasKey(cu => cu.CustomerId);
+            modelBuilder.Entity<PurchaseDetails>().HasKey(pd => pd.PDetailId);
+            modelBuilder.Entity<Purchases>().HasKey(pu => pu.PurchaseId);
 
         }
+        public async Task BeginTransactionAsync()
+        {
+            _currentTransaction = await Database.BeginTransactionAsync();
+        }
 
+        public async Task CommitTransactionAsync()
+        {
+            try
+            {
+                await SaveChangesAsync();
 
+                if (_currentTransaction != null)
+                {
+                    await _currentTransaction.CommitAsync();
+                }
+            }
+            catch
+            {
+                await RollbackTransactionAsync();
+                throw;
+            }
+            finally
+            {
+                if (_currentTransaction != null)
+                {
+                    _currentTransaction.Dispose();
+                    _currentTransaction = null;
+                }
+            }
+        }
+
+        public async Task RollbackTransactionAsync()
+        {
+            if (_currentTransaction != null)
+            {
+                await _currentTransaction.RollbackAsync();
+                _currentTransaction.Dispose();
+                _currentTransaction = null;
+            }
+        }
     }
+
 }
+

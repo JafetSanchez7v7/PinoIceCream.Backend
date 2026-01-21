@@ -29,7 +29,7 @@ builder.Services.AddScoped<IInventoryService, InventoryService>();
 //Transaccionales Servicios Compra venta y atomicidad
 builder.Services.AddScoped<IPurchasesRepository, PurchasesRepository>();
 builder.Services.AddScoped<IPurchasesService, PurchasesService>();
-builder.Services.AddScoped<IUnitOfWork>(provider => provider.GetRequiredService<MyAppDbContext>());
+builder.Services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<MyAppDbContext>());
 // Registrar Perfiles de mapeo
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CategoryProfiles).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<CategoryProfiles>());

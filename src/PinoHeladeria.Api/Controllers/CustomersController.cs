@@ -9,10 +9,10 @@ namespace PinoHeladeria.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CustomersControllers : ControllerBase
+    public class CustomersController : ControllerBase
     {
         private readonly ICustomersService _service;
-        public CustomersControllers(ICustomersService service)
+        public CustomersController(ICustomersService service)
         {
             _service = service;
         }

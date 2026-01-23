@@ -16,9 +16,8 @@ namespace PinoHeladeria.Infrastucture.AppDbContext
     {
         private IDbContextTransaction _currentTransaction;
 
-        public MyAppDbContext(DbContextOptions<MyAppDbContext> options, IDbContextTransaction trans) : base(options)
+        public MyAppDbContext(DbContextOptions<MyAppDbContext> options) : base(options)
         {
-           _currentTransaction = trans;
         }
         public DbSet<Categories> Categories => Set<Categories>();
         public DbSet<Suppliers> Suppliers => Set<Suppliers>();
@@ -27,6 +26,8 @@ namespace PinoHeladeria.Infrastucture.AppDbContext
         public DbSet<Customers> Customers => Set<Customers>();
         public DbSet<PurchaseDetails> PurchaseDetails => Set<PurchaseDetails>();
         public DbSet<Purchases> Purchases => Set<Purchases>();
+        public DbSet<Sales> Sales => Set<Sales>();
+        public DbSet<SalesDetails> SalesDetails => Set<SalesDetails>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Le decimos explícitamente qué columna es la PK
@@ -37,6 +38,8 @@ namespace PinoHeladeria.Infrastucture.AppDbContext
             modelBuilder.Entity<Customers>().HasKey(cu => cu.CustomerId);
             modelBuilder.Entity<PurchaseDetails>().HasKey(pd => pd.PDetailId);
             modelBuilder.Entity<Purchases>().HasKey(pu => pu.PurchaseId);
+            modelBuilder.Entity<SalesDetails>().HasKey(sd=> sd.SaleDetailId);
+            modelBuilder.Entity<Sales>().HasKey(s=> s.SaleId);
 
         }
         public async Task BeginTransactionAsync()

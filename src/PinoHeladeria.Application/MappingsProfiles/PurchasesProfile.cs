@@ -14,14 +14,16 @@ namespace PinoHeladeria.Application.MappingsProfiles
         public PurchasesProfile() {
 
 
-            CreateMap<CreatePurchaseDto, Purchases>().
-                ForMember(dest => dest.PurchaseId, opt => opt.Ignore())
-                .ForMember(dest => dest.PurchaseDate, opt => opt.MapFrom(src => DateTime.Now));
-            CreateMap<CreatePurchaseDetailDto, PurchaseDetails>().
-                ForMember(dest => dest.PDetailId, opt => opt.Ignore());
+            // 1. De DTO a Entidad (Para Guardar)
+            CreateMap<CreatePurchaseDto, Purchases>()
+                .ForMember(dest => dest.PurchaseId, opt => opt.Ignore()); // El ID lo genera la DB
 
-            CreateMap<PurchaseDetails, PurchasesDetailsDto>().ReverseMap();
-            CreateMap<Purchases, PurchaseDto>().ReverseMap();
+            CreateMap<CreatePurchaseDetailDto, PurchaseDetails>()
+                .ForMember(dest => dest.PDetailId, opt => opt.Ignore()); // El ID lo genera la DB
+
+            // 2. De Entidad a Response (Para devolver al Front/Postman)
+            CreateMap<Purchases, PurchaseDto>();
+            CreateMap<PurchaseDetails, PurchasesDetailsDto>();
         }
     }
 }

@@ -14,7 +14,7 @@ namespace PinoHeladeria.Domain.Entities
         public int Quantity { get; set; }
         public decimal PurchasePrice { get; set; }
         public decimal Total {  get; set; }
-
+        public virtual Products Products { get; }
         public virtual Purchases? Purchase { get; set; }
     }
 }

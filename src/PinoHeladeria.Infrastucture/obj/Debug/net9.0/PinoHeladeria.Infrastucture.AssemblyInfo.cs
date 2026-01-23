@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PinoHeladeria.Infrastucture")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+dca05199c16f0e456c083473789de6c431eca519")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+218d732216aed5135244b5933e89347988a1614d")]
 [assembly: System.Reflection.AssemblyProductAttribute("PinoHeladeria.Infrastucture")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PinoHeladeria.Infrastucture")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

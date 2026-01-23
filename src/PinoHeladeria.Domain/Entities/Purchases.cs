@@ -13,6 +13,7 @@ namespace PinoHeladeria.Domain.Entities
         public DateTime PurchaseDate { get; set; }
         public decimal PurchaseTotal { get; set; }
 
-        public virtual ICollection<PurchaseDetails> PurchaseDetails { get; set; } = new List<PurchaseDetails>();
+        
+        public virtual ICollection<PurchaseDetails?> PurchaseDetails { get; set; } = new List<PurchaseDetails?>();
     }
 }

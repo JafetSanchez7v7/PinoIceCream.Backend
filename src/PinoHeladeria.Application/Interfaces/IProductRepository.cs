@@ -2,6 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -15,5 +16,7 @@ namespace PinoHeladeria.Application.Interfaces
         Task<Products> AddAsync(Products product);
         Task<IEnumerable<Products>> GetActiveProductsAsync();
         Task<Products> GetToUpdateAsync( int id);
+        Task<IEnumerable<Products>>GetWhereAsync(Expression<Func<Products, bool>>predicate);
+        Task<IEnumerable<Products>> GetActiveProductsByIdsAsync(List<int> productIds);
     }
 }

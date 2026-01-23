@@ -63,6 +63,17 @@ namespace PinoHeladeria.Infrastucture.Repositories
                                                    .FirstOrDefaultAsync(i=> i.ProductId == id);
             return returned;
         }
+        public async Task<Inventories> UpdateProductStockAsync(int id)
+        {
+            var returned = await _context.Inventory
+                                         .FirstOrDefaultAsync(i => i.ProductId == id);
+            return returned;
+        }
+        public async Task<Inventories> AddAsync(Inventories inv)
+        {
+            var result = await _context.Inventory.AddAsync(inv);
+            return result.Entity;
+        }
 
     }
 }

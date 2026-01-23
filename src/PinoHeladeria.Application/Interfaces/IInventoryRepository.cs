@@ -14,5 +14,8 @@ namespace PinoHeladeria.Application.Interfaces
         Task<Inventories> GetByProductIdAsync(int id);
         Task<IEnumerable<Inventories>> GetByStockFilterAsync(int filter);
         Task<Inventories> GetByProductNameAsync(string name);
+        Task<Inventories> UpdateProductStockAsync(int id);
+        Task<Inventories> AddAsync(Inventories inv);
     }
+
 }

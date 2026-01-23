@@ -22,7 +22,7 @@ namespace PinoHeladeria.API.Controllers
             {
                DetailsAmount = result.PurchaseDetails.Count
             };
-            var apiResp = HelpersOfAppResp.ApiResponseMaker.Create(200,result,"Compra realizada con exito",meta);
+            var apiResp = HelpersOfAppResp.ApiResponseMaker.Create(201,result,"Compra realizada con exito",meta);
             return CreatedAtAction(nameof(AddPurchase), new { id = result.PurchaseId }, apiResp);
         }
     }

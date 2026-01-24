@@ -13,14 +13,21 @@ namespace PinoHeladeria.Application.MappingsProfiles
     {
         public SalesProfile()
         {
-            CreateMap<SalesDto, Sales>();
-            CreateMap<SaleDetailsDto, SalesDetails>();
-            //Creacion
-            CreateMap<CreateSaleDetailDto, SalesDetails>().
-                ForMember(dest => dest.SaleDetailId, opt => opt.Ignore());
-            //Master
-            CreateMap<CreateSaleDto, Sales>().
-                ForMember(dest=> dest.SaleId, opt => opt.Ignore());
+            // Mapeo Base para consultas
+            CreateMap<Sales, SalesDto>().ReverseMap();
+            CreateMap<SalesDetails, SaleDetailsDto>().ReverseMap();
+
+            // Mapeo de Creación - DETALLE
+            CreateMap<CreateSaleDetailDto, SalesDetails>()
+                .ForMember(dest => dest.SaleDetailId, opt => opt.Ignore())
+                .ForMember(dest => dest.Sales, opt => opt.Ignore()) // <--- IMPORTANTE
+                .ReverseMap();
+
+            // Mapeo de Creación - CABECERA
+            CreateMap<CreateSaleDto, Sales>()
+                .ForMember(dest => dest.SaleId, opt => opt.Ignore())
+                .ForMember(dest => dest.SalesDetails, opt => opt.MapFrom(src => src.SalesDetails)) // Asegúrate que se llame así en el DTO
+                .ReverseMap();
         }
     }
 }

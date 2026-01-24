@@ -11,7 +11,7 @@ namespace PinoHeladeria.Application.DTOs.SalesDtos
         public int SaleId { get ; set; }
         public int CustomerId { get; set; }
         public decimal SaleTotal { get; set; }
-        public List<SaleDetailsDto> DetailsDtos { get; set; }
+        public List<SaleDetailsDto> SalesDetails { get; set; }
 
     }
 }

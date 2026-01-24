@@ -9,6 +9,6 @@ namespace PinoHeladeria.Application.Services_Interfaces
 {
     public interface ISaleService
     {
-        Task<SalesDto> Addsync(CreateSaleDto sales);
+        Task<SalesDto> AddAsync(CreateSaleDto sales);
     }
 }

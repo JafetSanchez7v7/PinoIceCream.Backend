@@ -32,7 +32,7 @@ namespace PinoHeladeria.Application.Services
             _mapper = map;
         }
 
-        public async Task<SalesDto>AddAsync(CreateSaleDto sales)
+        public async Task<SalesDto> AddAsync(CreateSaleDto sales)
         {
             var errors = new List<string>();
             // validar el cliente
@@ -43,7 +43,7 @@ namespace PinoHeladeria.Application.Services
                 throw new ErrorValidationException(errors);
             }
             //validamos la existencia y actividad de los productos
-            var productIdsToBuy = sales.Details.Select(d => d.ProductId).Distinct().ToList();
+            var productIdsToBuy = sales.SalesDetails.Select(d => d.ProductId).Distinct().ToList();
             var productsInCatalog = await _productRepository.GetWhereAsync(p => productIdsToBuy.Contains(p.ProductId));
 
             if (productsInCatalog.Count() != productIdsToBuy.Count)
@@ -51,7 +51,7 @@ namespace PinoHeladeria.Application.Services
                 var foundIds = productsInCatalog.Select(p => p.ProductId);
                 var missingIds = productIdsToBuy.Except(foundIds);
 
-                errors.Add($"No puedes realizar la compra: los siguientes IDs de productos no existen en el catálogo: {string.Join(", ", missingIds)}");
+                errors.Add($"No puedes realizar la venta: los siguientes IDs de productos no existen en el catálogo: {string.Join(", ", missingIds)}");
                 throw new ErrorValidationException(errors);
             }
             foreach (var product in productsInCatalog)
@@ -68,11 +68,48 @@ namespace PinoHeladeria.Application.Services
                 var saleEntity = _mapper.Map<Sales>(sales);
                 if (saleEntity.SalesDetails != null && saleEntity.SalesDetails.Count > 0)
                 {
-                    foreach(var detail in saleEntity.SalesDetails)
+                    foreach (var detail in saleEntity.SalesDetails)
                     {
-                        var inventory
+                        var inventory = await _inventoryRepository.UpdateProductStockAsync(detail.ProductId);
+                        if(inventory == null)
+                        {
+                            errors.Add("No existe inventario para este producto");
+                            throw new ErrorValidationException(errors);
+                        }
+                        if (inventory.Quantity < detail.Quantity)
+                        {
+                            errors.Add($"No hay suficiente stock para el producto con id: {detail.ProductId}. Stock disponible: {inventory.Quantity}, cantidad solicitada: {detail.Quantity}");
+                            throw new ErrorValidationException(errors);
+                        }
+                        else
+                        {
+                            inventory.Quantity -= detail.Quantity;
+                            inventory.UpdatedAt = DateTime.UtcNow;
+                        }
+                        detail.Total = detail.Quantity * inventory.SalePrice;
                     }
+                    saleEntity.SaleTotal = saleEntity.SalesDetails.Sum(d => d.Total);
+                    saleEntity.SaleDate = DateTime.UtcNow;
                 }
+                var createdSale = await _service.AddAsync(saleEntity);
+                await _unitOfWork.SaveChangesAsync();
+                await _unitOfWork.CommitTransactionAsync();
+                return _mapper.Map<SalesDto>(createdSale);
+
+
+
             }
+            catch (Exception ex)
+            {
+                await _unitOfWork.RollbackTransactionAsync();
+                if (ex is ErrorValidationException)
+                {
+                    throw;
+                }
+                throw new DataBaseException("Ocurrio un error al intentar registrar la venta, por favor intente de nuevo " + ex.Message);
+
+            }
+
         }
+    }
 }

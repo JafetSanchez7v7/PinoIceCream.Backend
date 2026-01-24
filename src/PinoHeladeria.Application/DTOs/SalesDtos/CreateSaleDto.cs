@@ -13,7 +13,7 @@ namespace PinoHeladeria.Application.DTOs.SalesDtos
         public int CustomerId {  get; set; }
         [Required(ErrorMessage= "Sale Details Are Required ")]
         [MinLength(1, ErrorMessage = "it has to be at least one Sale Detail")]
-        public List<CreateSaleDetailDto> Details { get; set; }
+        public List<CreateSaleDetailDto> SalesDetails { get; set; }
         
     }
 }

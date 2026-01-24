@@ -118,10 +118,14 @@ namespace PinoHeladeria.Application.Services
                 await _unitOfWork.CommitTransactionAsync();
                 return _mapperService.Map<PurchaseDto>(addedPurchase);
             }
-            catch
+            catch(Exception ex)
             {
                 await _unitOfWork.RollbackTransactionAsync();
-                throw new DataBaseException("Ocurrio un error al intentar registrar la compra, por favor intente de nuevo ");
+                if(ex is ErrorValidationException)
+                {
+                    throw;
+                }
+                throw new DataBaseException("Ocurrio un error al intentar registrar la compra, por favor intente de nuevo " + ex.Message);
             }
 
 

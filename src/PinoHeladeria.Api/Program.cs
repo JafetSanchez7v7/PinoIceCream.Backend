@@ -26,9 +26,13 @@ builder.Services.AddScoped<ISuppliersRepository, SuppliersRepository>();
 builder.Services.AddScoped<ISuppliersService, SupplierService>();
 builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
 builder.Services.AddScoped<IInventoryService, InventoryService>();
+builder.Services.AddScoped<ICustomersRepository, CustomersRepository>();
+builder.Services.AddScoped<ICustomersService, CustomerService>();
 //Transaccionales Servicios Compra venta y atomicidad
 builder.Services.AddScoped<IPurchasesRepository, PurchasesRepository>();
 builder.Services.AddScoped<IPurchasesService, PurchasesService>();
+builder.Services.AddScoped<ISalesRepository, SalesRepository>();
+builder.Services.AddScoped<ISaleService, SaleService>();
 builder.Services.AddScoped<IUnitOfWork>(sp => sp.GetRequiredService<MyAppDbContext>());
 // Registrar Perfiles de mapeo
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(CategoryProfiles).Assembly));
@@ -41,6 +45,8 @@ builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(InventoryProfile).Assem
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<InventoryProfile>());
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<PurchasesProfile>());
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(PurchasesProfile).Assembly));
+builder.Services.AddAutoMapper(cfg => cfg.AddProfile<SalesProfile>());
+builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(SalesProfile).Assembly));
 
 
 

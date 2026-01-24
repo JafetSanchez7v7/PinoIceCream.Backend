@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PinoHeladeria.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+218d732216aed5135244b5933e89347988a1614d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+128b234bffaecb5520229307e0914c28032dc857")]
 [assembly: System.Reflection.AssemblyProductAttribute("PinoHeladeria.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PinoHeladeria.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
@@ -13,6 +14,8 @@ namespace PinoHeladeria.Domain.Entities
         public int SaleId { get; set; }
         public int ProductId {  get; set; }
         public int Quantity { get; set; }
-        public decimal Total {get; set; } 
+        public decimal Total {get; set; }
+        [ForeignKey("SaleId")]
+        public virtual Sales Sales { get; set; }
     }
 }

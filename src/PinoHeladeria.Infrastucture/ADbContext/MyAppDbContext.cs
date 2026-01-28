@@ -28,6 +28,8 @@ namespace PinoHeladeria.Infrastucture.AppDbContext
         public DbSet<Purchases> Purchases => Set<Purchases>();
         public DbSet<Sales> Sales => Set<Sales>();
         public DbSet<SalesDetails> SalesDetails => Set<SalesDetails>();
+        public DbSet<SsUsers> SsUsers => Set<SsUsers>();
+        public DbSet<Roles> Roles => Set<Roles>();
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             // Le decimos explícitamente qué columna es la PK
@@ -40,6 +42,9 @@ namespace PinoHeladeria.Infrastucture.AppDbContext
             modelBuilder.Entity<Purchases>().HasKey(pu => pu.PurchaseId);
             modelBuilder.Entity<SalesDetails>().HasKey(sd=> sd.SaleDetailId);
             modelBuilder.Entity<Sales>().HasKey(s=> s.SaleId);
+            modelBuilder.Entity<SsUsers>().HasKey(u => u.UserId);
+            modelBuilder.Entity<Roles>().HasKey(u => u.RoleId);
+
 
         }
         public async Task BeginTransactionAsync()

@@ -80,7 +80,7 @@ namespace PinoHeladeria.Infrastucture.Repositories
 
         public async Task<IEnumerable<Products>> GetActiveProductsByIdsAsync(List<int> productIds)
         {
-            return await _context.Products.Where(p => p.IsActive).Take(productIds.Count).ToListAsync();
+            return await _context.Products.Where(p => p.IsActive && productIds.Contains(p.ProductId)).ToListAsync();
 
         }
 

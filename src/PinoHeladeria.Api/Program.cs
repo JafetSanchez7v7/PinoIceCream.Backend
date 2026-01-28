@@ -28,6 +28,9 @@ builder.Services.AddScoped<IInventoryRepository, InventoryRepository>();
 builder.Services.AddScoped<IInventoryService, InventoryService>();
 builder.Services.AddScoped<ICustomersRepository, CustomersRepository>();
 builder.Services.AddScoped<ICustomersService, CustomerService>();
+//Autorizacion y usuarios
+builder.Services.AddScoped<IUsersRepository, UsersRepository>();
+
 //Transaccionales Servicios Compra venta y atomicidad
 builder.Services.AddScoped<IPurchasesRepository, PurchasesRepository>();
 builder.Services.AddScoped<IPurchasesService, PurchasesService>();
@@ -47,7 +50,8 @@ builder.Services.AddAutoMapper(cfg => cfg.AddProfile<PurchasesProfile>());
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(PurchasesProfile).Assembly));
 builder.Services.AddAutoMapper(cfg => cfg.AddProfile<SalesProfile>());
 builder.Services.AddAutoMapper(cfg => cfg.AddMaps(typeof(SalesProfile).Assembly));
-
+builder.Services.AddAutoMapper(cfg=> cfg.AddProfile<UsersProfile>());
+builder.Services.AddAutoMapper(cfg=> cfg.AddMaps(typeof (UsersProfile).Assembly));
 
 
 

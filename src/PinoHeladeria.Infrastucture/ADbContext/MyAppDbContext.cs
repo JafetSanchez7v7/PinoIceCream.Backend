@@ -37,13 +37,13 @@ namespace PinoHeladeria.Infrastucture.AppDbContext
             modelBuilder.Entity<Suppliers>().HasKey(s => s.SupplierId);
             modelBuilder.Entity<Products>().HasKey(p => p.ProductId);
             modelBuilder.Entity<Inventories>().HasKey(p => p.InventoryId);
-            modelBuilder.Entity<Customers>().HasKey(cu => cu.CustomerId);
+            modelBuilder.Entity<Customers>().ToTable(tb=>tb.HasTrigger("trg_ProtectGeneralCustomer")).HasKey(cu => cu.CustomerId);
             modelBuilder.Entity<PurchaseDetails>().HasKey(pd => pd.PDetailId);
             modelBuilder.Entity<Purchases>().HasKey(pu => pu.PurchaseId);
             modelBuilder.Entity<SalesDetails>().HasKey(sd=> sd.SaleDetailId);
             modelBuilder.Entity<Sales>().HasKey(s=> s.SaleId);
-            modelBuilder.Entity<SsUsers>().HasKey(u => u.UserId);
-            modelBuilder.Entity<Roles>().HasKey(u => u.RoleId);
+            modelBuilder.Entity<SsUsers>().ToTable(tb=>tb.HasTrigger("trg_Users_PreventModifyAdmin")).HasKey(u => u.UserId);
+            modelBuilder.Entity<Roles>().ToTable(tb=>tb.HasTrigger("trg_Roles_PreventModifyRoleId1")).HasKey(u => u.RoleId);
 
 
         }

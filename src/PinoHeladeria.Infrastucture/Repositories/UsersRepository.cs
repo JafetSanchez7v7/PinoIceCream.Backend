@@ -44,5 +44,7 @@ namespace PinoHeladeria.Infrastucture.Repositories
         {
             return await _context.SsUsers.FirstOrDefaultAsync(x => x.UserId == id);
         }
+
+       
     }
 }

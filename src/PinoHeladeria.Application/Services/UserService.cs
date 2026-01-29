@@ -69,7 +69,8 @@ namespace PinoHeladeria.Application.Services
             if (existingUser != null)
                 throw new ConflictException($"el usuario con nombre {dto.UserName} ya existe, por favor ingrese otro nombre");
             var entity = _mapper.Map<SsUsers>(dto);
-            var newUser = await _repo.AddAsync(entity);  
+            var newUser = await _repo.AddAsync(entity);
+            await _unitOfWork.SaveChangesAsync();
             return _mapper.Map<UserDto>(newUser);
 
         }
@@ -136,7 +137,7 @@ namespace PinoHeladeria.Application.Services
             var verifyNew = BCrypt.Net.BCrypt.Verify(dto.NewPassword, user.PasswordHash);
             if (verifyNew)
             {
-                errors.Add("la nueva Contraseña no puede ser igual a la anterior por favor cambie la contraseña")
+                errors.Add("la nueva Contraseña no puede ser igual a la anterior por favor cambie la contraseña");
                 throw new ErrorValidationException(errors);
             }
             user.PasswordHash = BCrypt.Net.BCrypt.HashPassword(dto.NewPassword);

@@ -167,3 +167,5 @@ C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Api\obj\Debug\net9.
 C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Api\obj\Debug\net9.0\PinoHeladeria.API.pdb
 C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Api\obj\Debug\net9.0\PinoHeladeria.API.genruntimeconfig.cache
 C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Api\obj\Debug\net9.0\ref\PinoHeladeria.API.dll
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Api\bin\Debug\net9.0\BCrypt.Net-Next.dll
+C:\UNI\Programacion 2\PinoIceCream.Backend\src\PinoHeladeria.Api\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

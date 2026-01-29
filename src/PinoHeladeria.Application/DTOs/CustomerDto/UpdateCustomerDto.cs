@@ -15,7 +15,7 @@ namespace PinoHeladeria.Application.DTOs.CustomerDto
         public string CustomerName { get; set; } = null!;
 
         [StringLength(250, ErrorMessage = "La descripción no puede exceder los 250 caracteres.")]
-        public string? CustomerDescription { get; set; }
+        public string CustomerDescription { get; set; }
         [Required(ErrorMessage = "IsActive is Required")]
         public bool IsActive { get; set; }
     }

@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "PinoHeladeria.API.Controllers.AuthControler",
+    "Method": "Login",
+    "RelativePath": "api/AuthControler/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginRequest",
+        "Type": "PinoHeladeria.Application.DTOs.LoginDtos.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PinoHeladeria.API.Controllers.CategoriesController",
     "Method": "GetAll",
     "RelativePath": "api/Categories",
@@ -138,7 +154,7 @@
   {
     "ContainingType": "PinoHeladeria.API.Controllers.CustomersController",
     "Method": "Update",
-    "RelativePath": "api/Customers",
+    "RelativePath": "api/Customers/{id}",
     "HttpMethod": "PUT",
     "IsController": true,
     "Order": 0,
@@ -146,7 +162,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       },
       {
         "Name": "dto",
@@ -409,6 +425,116 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "PinoHeladeria.API.Controllers.RolesController",
+    "Method": "GetAll",
+    "RelativePath": "api/Roles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.RolesController",
+    "Method": "AddRole",
+    "RelativePath": "api/Roles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PinoHeladeria.Application.DTOs.RolesDtos.CreateRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.RolesController",
+    "Method": "GetById",
+    "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.RolesController",
+    "Method": "Update",
+    "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PinoHeladeria.Application.DTOs.RolesDtos.UpdateRoleDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.RolesController",
+    "Method": "UpdateStatus",
+    "RelativePath": "api/Roles/{id}",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PinoHeladeria.Application.DTOs.RolesDtos.UpdateRoleStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.RolesController",
+    "Method": "GetByName",
+    "RelativePath": "api/Roles/{name}/byName",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.RolesController",
+    "Method": "GetActiveRoles",
+    "RelativePath": "api/Roles/Actives",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "PinoHeladeria.API.Controllers.SalesController",
     "Method": "Add",
     "RelativePath": "api/Sales",
@@ -538,6 +664,137 @@
     "ContainingType": "PinoHeladeria.API.Controllers.SuppliersController",
     "Method": "GetByName",
     "RelativePath": "api/Suppliers/ByName/{name}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.UsersController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/Users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.UsersController",
+    "Method": "AddAsync",
+    "RelativePath": "api/Users",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "PinoHeladeria.Application.DTOs.UsersDtos.CreateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.UsersController",
+    "Method": "GetById",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.UsersController",
+    "Method": "UpdateAsync",
+    "RelativePath": "api/Users/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PinoHeladeria.Application.DTOs.UsersDtos.UpdateUserDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.UsersController",
+    "Method": "UpdatePassWordAsync",
+    "RelativePath": "api/Users/{id}/password",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PinoHeladeria.Application.DTOs.UsersDtos.UpdatePasswordDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.UsersController",
+    "Method": "UpdateStatusAsync",
+    "RelativePath": "api/Users/{id}/status",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "PinoHeladeria.Application.DTOs.UsersDtos.UpdateUserStatusDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.UsersController",
+    "Method": "GetActiveUsers",
+    "RelativePath": "api/Users/active",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.UsersController",
+    "Method": "GetByName",
+    "RelativePath": "api/Users/by-name/{name}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

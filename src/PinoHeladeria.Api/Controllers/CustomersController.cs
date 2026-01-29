@@ -62,7 +62,7 @@ namespace PinoHeladeria.API.Controllers
             var apiResponse = HelpersOfAppResp.ApiResponseMaker.Create(201, response, "Cliente Creado Exitosamente", meta);
             return CreatedAtAction(nameof(GetById), new { id = response.CustomerId }, apiResponse);
         }
-        [HttpPut]
+        [HttpPut("{id}")]
         public async Task<IActionResult>Update(int id, [FromBody] UpdateCustomerDto dto)
         {
             var response = await _service.UpdateAsync(id, dto);

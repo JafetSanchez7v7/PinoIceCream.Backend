@@ -14,7 +14,7 @@ namespace PinoHeladeria.Application.MappingsProfiles
     {
         public CustomerProfiles()
         {
-            CreateMap<CustomerDto, Customers>();
+            CreateMap<CustomerDto, Customers>().ReverseMap();
             // Create
             CreateMap<CreateCustomerDto, Customers>()
                 .ForMember(dest => dest.CustomerId, opt => opt.Ignore())

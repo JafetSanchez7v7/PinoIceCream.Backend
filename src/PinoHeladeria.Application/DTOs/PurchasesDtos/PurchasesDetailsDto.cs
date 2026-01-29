@@ -14,6 +14,7 @@ namespace PinoHeladeria.Application.DTOs.PurchasesDtos
         public int Quantity { get; set; }
         public decimal PurchasePrice { get; set; }
         public decimal Total { get; set; }
+       
 
     }
 }

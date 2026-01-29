@@ -34,20 +34,31 @@ namespace PinoHeladeria.API.MIddleWares
             catch (DbUpdateException dbEx)
             {
                 _logger.LogError(dbEx, "Database update exception.");
+                var currentEx = (Exception)dbEx;
+                bool isVitalError = false;
+                string errorMessage = "Error de persistencia en base de datos.";
 
-                // Si el mensaje del Trigger contiene nuestra palabra clave 'vital'
-                if (dbEx.InnerException?.Message.Contains("vital") == true)
+                // Recorremos la "cebolla" de excepciones
+                while (currentEx != null)
+                {
+                    if (currentEx.Message.ToLower().Contains("vital"))
+                    {
+                        isVitalError = true;
+                        errorMessage = currentEx.Message; // Guardamos el mensaje específico del Trigger
+                        break; // Ya lo encontramos, no hay que seguir buscando
+                    }
+                    currentEx = currentEx.InnerException;
+                }
+
+                if (isVitalError)
                 {
                     context.Response.StatusCode = (int)HttpStatusCode.Forbidden;
-                    await context.Response.WriteAsJsonAsync(new
-                    {
-                        Error = dbEx.InnerException.Message // Aquí viaja tu RAISERROR de SQL
-                    });
+                    await context.Response.WriteAsJsonAsync(new { Error = errorMessage });
                 }
                 else
                 {
                     context.Response.StatusCode = 500;
-                    await context.Response.WriteAsJsonAsync(new { Error = "Error de persistencia en base de datos." });
+                    await context.Response.WriteAsJsonAsync(new { Error = "Errod" });
                 }
             }
             catch (Exception ex)

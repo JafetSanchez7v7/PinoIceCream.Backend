@@ -5,6 +5,7 @@ using PinoHeladeria.Infrastucture.AppDbContext;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -67,5 +68,22 @@ namespace PinoHeladeria.Infrastucture.Repositories
                 FirstOrDefaultAsync(p => p.ProductId == id);
             return returned;
         }
+        public async Task<IEnumerable<Products>> GetWhereAsync(Expression<Func<Products, bool>> predicate)
+        {
+            return await _context.Products
+                .AsNoTracking()
+                .Include(c => c.Category)
+                .Include(s => s.Supplier)
+                .Where(predicate) // Ahora EF sí entiende cómo traducir esto a SQL
+                .ToListAsync();   // Ahora sí te dejará usar el Async
+        }
+
+        public async Task<IEnumerable<Products>> GetActiveProductsByIdsAsync(List<int> productIds)
+        {
+            return await _context.Products.Where(p => p.IsActive && productIds.Contains(p.ProductId)).ToListAsync();
+
+        }
+
     }
+
 }

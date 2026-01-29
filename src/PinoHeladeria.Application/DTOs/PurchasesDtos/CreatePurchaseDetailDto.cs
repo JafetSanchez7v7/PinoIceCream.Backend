@@ -9,14 +9,14 @@ namespace PinoHeladeria.Application.DTOs.PurchasesDtos
 {
     public class CreatePurchaseDetailDto
     {
-        [Required(ErrorMessage = "El Id del producto es obligatorio")]
-        [Range(1, int.MaxValue, ErrorMessage = "El Id del producto debe ser un número positivo")]
+        [Required(ErrorMessage = "Product Id is required")]
+        [Range(1, int.MaxValue, ErrorMessage = "The Id has to be a non negative number")]
         public int ProductId { get; set; }
-        [Required(ErrorMessage = "La cantidad es obligatoria")]
-        [Range(1, int.MaxValue, ErrorMessage = "La cantidad debe ser un número positivo")]
+        [Required(ErrorMessage = "Quantity is required")]
+        [Range(1, int.MaxValue, ErrorMessage = "Quantity has to be a non negative number")]
         public int Quantity { get; set; }
-        [Required(ErrorMessage = "El precio unitario es obligatorio")]
-        [Range(0.01, double.MaxValue, ErrorMessage = "El precio unitario debe ser un número positivo")]
+        [Required(ErrorMessage = "The Purchase Price is Required")]
+        [Range(0.01, double.MaxValue, ErrorMessage = "The Price has to be a non negative number")]
         public double PurchasePrice { get; set; }
     }
 }

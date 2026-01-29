@@ -14,8 +14,10 @@ namespace PinoHeladeria.Application.DTOs.ProductDtos
         public string ProductName { get; set; }
 
         [Required(ErrorMessage = "SupplierId is Required")]
+        [Range (1, int.MaxValue, ErrorMessage = "The Id has to be a non negative number")]
         public int SupplierId { get; set; }
         [Required(ErrorMessage = "CategoryId is Required")]
+        [Range(1, int.MaxValue, ErrorMessage = "The Id has to be a non negative number")]
         public int CategoryId { get; set; }
         [Required(ErrorMessage="Description is Required")]
         [MaxLength(50, ErrorMessage = "Description can´t exceed 50 characters"), MinLength(5, ErrorMessage ="Description Cant have less than 5 characters")]

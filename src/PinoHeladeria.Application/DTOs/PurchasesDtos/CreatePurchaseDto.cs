@@ -15,8 +15,7 @@ namespace PinoHeladeria.Application.DTOs.PurchasesDtos
 
         public int SupplierId { get; set; }
 
-        [Required(ErrorMessage = "La fecha de la compra es obligatoria")]
-        public DateTime PurchaseDate { get; set; }
+
         [Required(ErrorMessage = "Los detalles de la compra son obligatorios")]
         [MinLength(1, ErrorMessage = "Debe haber al menos un detalle de compra")]
         public List<CreatePurchaseDetailDto> PurchaseDetails { get; set; }

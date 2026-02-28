@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PinoHeladeria.Application.Services_Interfaces;
@@ -16,6 +17,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet("GetAll")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> GetAll()
         {
            var response = await _inventoryService.GetAllAsync();
@@ -27,7 +30,9 @@ namespace PinoHeladeria.API.Controllers
             var apiResp = HelpersOfAppResp.ApiResponseMaker.Create(200,response,"Exito", meta);
             return Ok(apiResp);
         }
-        [HttpGet("{id}/ById")]
+        [HttpGet("{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult>ById(int id)
         {
             var response = await _inventoryService.GetByIdAsync(id);
@@ -39,6 +44,8 @@ namespace PinoHeladeria.API.Controllers
             return Ok(apiResp);
         }
         [HttpGet("{name}/ ByProductName")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult>ByProductName(string name)
         {
             var response = await _inventoryService.GetByProductNameAsync(name);
@@ -51,6 +58,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet("{productId}/ ByProductId")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> ByProductId(int id)
         {
             var response = await _inventoryService.GetByProductIdAsync(id);

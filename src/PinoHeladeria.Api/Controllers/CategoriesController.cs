@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using PinoHeladeria.Application.DTOs;
@@ -18,6 +19,7 @@ namespace PinoHeladeria.API.Controllers
             _categoryService = categoryService;
         }
         [HttpGet]
+        [Authorize(Roles = "Admin, Salesman" )]
         public async Task<IActionResult> GetAll()
         {
             var response = await _categoryService.GetAllCategoriesAsync();
@@ -30,6 +32,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
 
         public async Task<IActionResult> GetById(int id)
         {
@@ -40,6 +44,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet("byname/{name}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> GetByName(string name)
         {
             var response = await _categoryService.FindByNameAsync(name);
@@ -52,6 +58,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> Create([FromBody] CreateCategoryDto categoryDto)
         {
             var response = await _categoryService.AddAsync(categoryDto);
@@ -64,6 +72,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> Update(int id, [FromBody] UpdateCategoryDto categoryDto)
         {
             var response = await _categoryService.UpdateAsync(id, categoryDto);
@@ -72,6 +82,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpPatch("{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] UpdateStatusCatDto statusDto)
         {
             var response = await _categoryService.UpdateStatusAsync(id, statusDto);
@@ -80,6 +92,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet("Active")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> GetActiveCategories()
         {
             var response = await _categoryService.GetActiveCategoriesAsync();

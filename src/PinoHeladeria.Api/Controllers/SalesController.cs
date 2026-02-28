@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PinoHeladeria.Application.DTOs.SalesDtos;
 using PinoHeladeria.Application.Services_Interfaces;
@@ -15,6 +16,8 @@ namespace PinoHeladeria.API.Controllers
             _salesService = salesService;
         }
         [HttpPost]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> Add([FromBody] CreateSaleDto sale)
         {
             var result = await _salesService.AddAsync(sale);
@@ -26,9 +29,11 @@ namespace PinoHeladeria.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = result.SaleId }, ApiResp);
         }
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> GetById(int id)
         {
-            
+            //var response = await _salesService.GetByIdAsync(id);
            // var apiResp = HelpersOfAppResp.ApiResponseMaker.Create(200, result, "Sale retrieved successfully");
             return Ok();
         }

@@ -62,8 +62,13 @@ namespace PinoHeladeria.Application.Services
         public async Task<LoginResponseDto> Login(LoginRequestDto dto)
         {
             var user = await _user.GetByNameAsync(dto.UserName);
+            
+            if (user == null )
+            {
+                throw new UnauthorizedException("Invalid username or password.");
+            }
             var isValidPassword = BCrypt.Net.BCrypt.Verify(dto.Password, user.PasswordHash);
-            if (user == null || !isValidPassword)
+            if (!isValidPassword)
             {
                 throw new UnauthorizedException("Invalid username or password.");
             }

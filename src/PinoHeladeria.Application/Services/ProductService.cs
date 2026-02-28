@@ -19,14 +19,11 @@ namespace PinoHeladeria.Application.Services
         private readonly IProductRepository _productRepository;
         private readonly IUnitOfWork _unitOfWork;
         private readonly IMapper _mapper;
-        private readonly ICategoryRepository _categoryRepository;
-        private readonly ISuppliersRepository _suppliersRepository;
+       
         public ProductService(IMapper mapper,IProductRepository productRepository, IUnitOfWork unitOfWork, ICategoryRepository categoryRepository, ISuppliersRepository suppliersRepository)
         {
             _productRepository = productRepository;
             _unitOfWork = unitOfWork;
-            _categoryRepository = categoryRepository;
-            _suppliersRepository = suppliersRepository;
             _mapper = mapper;
         }
 
@@ -59,14 +56,14 @@ namespace PinoHeladeria.Application.Services
             var errors = new List<string>();
             
             // Validting Category if it exist or its active
-            var category = await _categoryRepository.FindCatAsync(dto.CategoryId);
+            var category = await _unitOfWork.CategoriesI.FindCatAsync(dto.CategoryId);
             if (category == null)
                 errors.Add($"Category with Id:{dto.CategoryId} does not exist");
             else if (!category.IsActive)
                 errors.Add($"Category with Id:{dto.CategoryId} is not Active");
 
             // Same as Category
-            var supplier = await _suppliersRepository.GetByIdAsync(dto.SupplierId);
+            var supplier = await _unitOfWork.SuppliersI.GetByIdAsync(dto.SupplierId);
             if (supplier == null)
                 errors.Add($"Supplier with Id:{dto.SupplierId} does not exist");
             else if (!supplier.IsActive)
@@ -74,7 +71,7 @@ namespace PinoHeladeria.Application.Services
 
             if (!errors.Any())
             {
-                var existentProduct = await _productRepository.GetByNameAsync(dto.ProductName);
+                var existentProduct = await _unitOfWork.ProductsI.GetByNameAsync(dto.ProductName);
                 if (existentProduct != null)
                     throw new ConflictException($"Product with name {dto.ProductName} already exists.");
             }
@@ -101,14 +98,14 @@ namespace PinoHeladeria.Application.Services
                 throw new NotFoundException($"Product with ID {productId} not found.");
             //Then we validate if the Category and Supplier exist
             // Validting Category if it exist or its active
-            var category = await _categoryRepository.FindCatAsync(dto.CategoryId);
+            var category = await _unitOfWork.CategoriesI.FindCatAsync(dto.CategoryId);
             if (category == null)
                 errors.Add($"Category with Id:{dto.CategoryId} does not exist");
             else if (!category.IsActive)
                 errors.Add($"Category with Id:{dto.CategoryId} is not Active");
 
             // Same as Category
-            var supplier = await _suppliersRepository.GetByIdAsync(dto.SupplierId);
+            var supplier = await _unitOfWork.SuppliersI.GetByIdAsync(dto.SupplierId);
             if (supplier == null)
                 errors.Add($"Supplier with Id:{dto.SupplierId} does not exist");
             else if (!supplier.IsActive)

@@ -81,8 +81,7 @@ namespace PinoHeladeria.Application.Services
             response.CustomerDescription = dto.CustomerDescription;
             response.IsActive = dto.IsActive;
             // Persistencia 
-            await _context.SaveChangesAsync();
-            
+            await _repo.UpdateAsync(response, response.CustomerName);
             return _mapper.Map<CustomerDto>(response);
 
         }
@@ -94,7 +93,7 @@ namespace PinoHeladeria.Application.Services
             if (response.IsActive == dto.IsActive)
                 throw new ConflictException($"El estado del cliente con id {id} ya es {(dto.IsActive ? "activo" : "inactivo")}");
             response.IsActive = dto.IsActive;
-            await _context.SaveChangesAsync();
+            await _repo.UpdateAsync(response);
             return _mapper.Map<CustomerDto>(response);
 
 

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PinoHeladeria.Application.DTOs.CustomerDto;
 using PinoHeladeria.Application.DTOs.ProductDtos;
@@ -17,6 +18,8 @@ namespace PinoHeladeria.API.Controllers
             _service = service;
         }
         [HttpGet]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult>GetAll()
         {
             var response = await _service.GetAllAsync();
@@ -30,6 +33,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet("{id}/byId")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult>GetById(int id)
         {
             var response = await _service.GetByIdAsync(id);
@@ -41,6 +46,8 @@ namespace PinoHeladeria.API.Controllers
             return Ok(apiResponse);
         }
         [HttpGet("{name}/byName")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult>GetByName(string name)
         {
             var response = await _service.GetByNameAsync(name);
@@ -52,6 +59,8 @@ namespace PinoHeladeria.API.Controllers
             return Ok(apiResponse);
         }
         [HttpPost]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> AddAsync([FromBody] CreateCustomerDto dto)
         {
             var response = await _service.AddAsync(dto);
@@ -63,6 +72,8 @@ namespace PinoHeladeria.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = response.CustomerId }, apiResponse);
         }
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult>Update(int id, [FromBody] UpdateCustomerDto dto)
         {
             var response = await _service.UpdateAsync(id, dto);
@@ -75,6 +86,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpPatch("Deactivate/{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> DeactivateProduct(int id, UpdateCustomerStatusDto dto)
         {
             var response = await _service.UpdateStatusAsync(id, dto);
@@ -86,6 +99,8 @@ namespace PinoHeladeria.API.Controllers
             return Ok(apiResponse);
         }
         [HttpGet("ActiveCustomers")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> GetActiveCustomers()
         {
             var response = await _service.GetActiveCustomersAsync();

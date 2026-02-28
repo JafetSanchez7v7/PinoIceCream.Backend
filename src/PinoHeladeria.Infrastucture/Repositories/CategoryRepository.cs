@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using PinoHeladeria.Application.Interfaces;
 using PinoHeladeria.Domain.Entities;
 using PinoHeladeria.Infrastucture.AppDbContext;
+using PinoHeladeria.Infrastucture.CacheKeys;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -14,53 +16,110 @@ namespace PinoHeladeria.Infrastucture.Repositories
 {
     public class CategoryRepository : ICategoryRepository
     {
-        private readonly  MyAppDbContext _context;
-        public CategoryRepository(MyAppDbContext context)
+        private readonly MyAppDbContext _context;
+        private readonly IMemoryCache _cache;
+       
+        public CategoryRepository(MyAppDbContext context, IMemoryCache cache)
         {
             _context = context;
+            _cache = cache;
         }
 
         public async Task<IEnumerable<Categories>>GetAllCategoriesAsync()
         {
-            return await _context.Categories
-                .AsNoTracking().ToListAsync();    
+            string key = $"{CategoryCacheKeys.CategoryList}";
+            if(!_cache.TryGetValue(key, out List<Categories> cachedCategories))
+            {
+                cachedCategories = await _context.Categories
+                    .AsNoTracking()
+                    .ToListAsync();
+                var cacheEntryOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(30))
+                    .SetAbsoluteExpiration(TimeSpan.FromHours(1));
+                _cache.Set(key, cachedCategories, cacheEntryOptions);
+            }
+                
+                return cachedCategories;
+
         }
         public async Task<Categories>FindCatAsync(int categoryId)
         {
-            return await _context.Categories
-                .AsNoTracking()
-                .FirstOrDefaultAsync(c => c.CategoryId == categoryId);
+            var key = $"{CategoryCacheKeys.CategoryByIdKey}{categoryId}";
+            if (!_cache.TryGetValue(key, out Categories cachedCategory))
+            {
+                cachedCategory = await _context.Categories
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(c => c.CategoryId == categoryId);
+                var cacheEntryOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(30))
+                    .SetAbsoluteExpiration(TimeSpan.FromHours(2));
+                _cache.Set(key, cachedCategory, cacheEntryOptions);
+            }
+            return cachedCategory;
         }
 
         public async Task<Categories> FindByNameAsync(string categoryName)
         {
-            return await _context.Categories
-                .AsNoTracking()
-                .FirstOrDefaultAsync(c => c.CategoryName.ToLower() == categoryName.ToLower());
+            var key = $"{CategoryCacheKeys.CategoryByNameKey}{categoryName}";
+
+            if (!_cache.TryGetValue(key, out Categories category))
+            {
+                category = await _context.Categories
+                    .AsNoTracking()
+                    .FirstOrDefaultAsync(c => c.CategoryName == categoryName);
+                var cacheEntryOptions = new MemoryCacheEntryOptions()
+                    .SetAbsoluteExpiration(TimeSpan.FromHours(1))
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(30));
+
+                _cache.Set(categoryName, category, cacheEntryOptions);
+            }
+            return category;
         }
 
         public async Task<Categories> AddAsync(Categories category)
         {
             var result = await _context.Categories.AddAsync(category);
+            _cache.Remove(CategoryCacheKeys.CategoryList);
+            _cache.Remove(CategoryCacheKeys.ActiveCategories);
             return result.Entity;
+
+            
         }
         
         public async Task<IEnumerable<Categories>>GetActiveCategoriesAsync()
         {
-            var returnedCategories = await _context.Categories
-                .AsNoTracking()
-                .Where(c => c.IsActive)
-                .OrderBy(c => c.CategoryName)
-                .ToListAsync();
+            if(!_cache.TryGetValue(CategoryCacheKeys.ActiveCategories, out IEnumerable<Categories> cachedActiveCategories))
+            {
+                cachedActiveCategories = await _context.Categories
+                    .AsNoTracking()
+                    .Where(c => c.IsActive)
+                    .ToListAsync();
+                var cacheEntryOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(30))
+                    .SetAbsoluteExpiration(TimeSpan.FromHours(1));
+                _cache.Set(CategoryCacheKeys.ActiveCategories, cachedActiveCategories, cacheEntryOptions);
+            }
+            return cachedActiveCategories;
 
-            return returnedCategories;
         }
 
         public async Task<Categories>FindAsTrackingAsync(int id)
         {
-            var returnedCategory = await _context.Categories.FirstOrDefaultAsync(c=> c.CategoryId == id);
+            var category = await _context.Categories
+                    .FirstOrDefaultAsync(c => c.CategoryId == id);
 
-            return returnedCategory;
+            return category;
+                
+           
+        }
+
+        public async Task UpdateAsync( Categories category, string oldName)
+        {
+            await _context.SaveChangesAsync();
+            _cache.Remove(CategoryCacheKeys.CategoryList);
+            _cache.Remove($"{CategoryCacheKeys.CategoryByIdKey}{category.CategoryId}");
+            _cache.Remove($"{CategoryCacheKeys.CategoryByNameKey}{oldName}");
+            _cache.Remove($"{CategoryCacheKeys.CategoryByNameKey}{category.CategoryName}");
 
         }
     }

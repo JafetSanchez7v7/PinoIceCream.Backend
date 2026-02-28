@@ -13,6 +13,7 @@ namespace PinoHeladeria.Domain.Entities
         public decimal SaleTotal { get; set; }
         public int CustomerId { get; set; }
 
+
         public virtual ICollection<SalesDetails?> SalesDetails { get; set; } = new List<SalesDetails?>();
 
     }

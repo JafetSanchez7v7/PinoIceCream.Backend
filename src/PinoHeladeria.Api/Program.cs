@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.RateLimiting;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Internal;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using PinoHeladeria.API.MIddleWares;
@@ -18,7 +19,13 @@ using System.Threading.RateLimiting;
 var builder = WebApplication.CreateBuilder(args);
 
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
+builder.Services.Configure<GeneralRateLimiterPolicies>(jwtSettings.GetSection(GeneralRateLimiterPolicies.RateLimiterPolicy));
+builder.Services.Configure<GeneralRateLimiterOptions>(jwtSettings.GetSection(GeneralRateLimiterOptions.RateLimiting));
 var secretKey = jwtSettings["SecretKey"];
+var generalRateLimitingPolicies = new GeneralRateLimiterPolicies();
+var genrealRateLimitingOptions = new GeneralRateLimiterOptions();
+builder.Configuration.GetSection(GeneralRateLimiterPolicies.RateLimiterPolicy).Bind(generalRateLimitingPolicies);
+builder.Configuration.GetSection(GeneralRateLimiterOptions.RateLimiting).Bind(genrealRateLimitingOptions);
 
 builder.Services.AddAuthentication(options =>
 {
@@ -67,25 +74,102 @@ builder.Services.AddOpenApi(options =>
     });
 });
 //Rate limiter 
-builder.Services.AddRateLimiter(options =>
-{
-    options.AddFixedWindowLimiter("LoginPolicy", opt =>
+    builder.Services.AddRateLimiter(options =>
     {
-        opt.Window = TimeSpan.FromMinutes(1);
-        opt.PermitLimit = 5;
-        opt.QueueLimit = 0;
+        options.OnRejected = async (context, token) =>
+       {
+           context.HttpContext.Response.StatusCode = StatusCodes.Status429TooManyRequests;
+           if (context.Lease.TryGetMetadata(MetadataName.RetryAfter, out var retryAfter))
+           {
+               await context.HttpContext.Response.WriteAsync($"Demasiadas solicitudes. Intenta de nuevo en {retryAfter.TotalSeconds} segundos.",
+              cancellationToken: token);
+           }
+           else
+           {
+               await context.HttpContext.Response.WriteAsync($"Demasiadas solicitudes. Intenta de nuevo más tarde.", cancellationToken: token);
+           }
+
+       };
+         options.AddFixedWindowLimiter(generalRateLimitingPolicies.FixedPolicy ?? throw new InvalidOperationException(), opt =>
+        {
+            Console.WriteLine("ESTE RATE LIMITER NO VIENE VACIO TODO BIEN SI ESTO NO SALE TENES MALO EL JSON SETTINGS");
+        opt.PermitLimit = genrealRateLimitingOptions.PermitLimit;
+        opt.Window = TimeSpan.FromSeconds(genrealRateLimitingOptions.Window);
         opt.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
-    });
+        });
 
-    // Respuesta personalizada cuando alguien se pasa del límite
-    options.RejectionStatusCode = StatusCodes.Status429TooManyRequests;
-});
+        options.AddSlidingWindowLimiter(generalRateLimitingPolicies.SlidingPolicy ?? throw new InvalidOperationException(), opt =>
+        {
+        opt.PermitLimit = genrealRateLimitingOptions.PermitLimit;
+        opt.Window = TimeSpan.FromSeconds(genrealRateLimitingOptions.Window);
+        opt.SegmentsPerWindow = genrealRateLimitingOptions.SegmentsPerWindow;
+        opt.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
+        });
+
+        options.AddTokenBucketLimiter(generalRateLimitingPolicies.TokenPolicy ?? throw new InvalidOperationException(), opt =>
+        {
+            opt.TokenLimit = genrealRateLimitingOptions.TokenLimit;
+            opt.ReplenishmentPeriod = TimeSpan.FromSeconds(genrealRateLimitingOptions.ReplenishmentPeriod);
+            opt.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
+            opt.TokensPerPeriod = genrealRateLimitingOptions.TokensPerPeriod;
+        });
+        options.AddConcurrencyLimiter(generalRateLimitingPolicies.ConcurrentPolicy ?? throw new InvalidOperationException(), opt =>
+        {
+
+            opt.PermitLimit = genrealRateLimitingOptions.PermitLimit;
+        opt.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
+        });
+        // LIMITADOR GLOBAL SIMPLE
+        options.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, string>(httpContext =>
+           {
+               return RateLimitPartition.GetFixedWindowLimiter("Global", httpContext =>
+               new FixedWindowRateLimiterOptions
+               {
+                   PermitLimit = genrealRateLimitingOptions.GlobalPermitLimit,
+                   Window = TimeSpan.FromSeconds(genrealRateLimitingOptions.Window),
+                   QueueProcessingOrder = QueueProcessingOrder.OldestFirst
+               });
+           });
+        //LIMITADOR GLOBAL ENCADENA
+        options.GlobalLimiter = PartitionedRateLimiter.CreateChained(
+            PartitionedRateLimiter.Create<HttpContext, string>(partitioner =>
+            {
+                var userAgent = partitioner.Request.Headers.UserAgent.ToString();
+                return RateLimitPartition.GetFixedWindowLimiter(userAgent, httpContext => new FixedWindowRateLimiterOptions
+                {
+                    PermitLimit = genrealRateLimitingOptions.PartitionedPermitLimit,
+                    Window = TimeSpan.FromMinutes(genrealRateLimitingOptions.Window),
+                    QueueProcessingOrder = QueueProcessingOrder.OldestFirst
+                });
+            }
+            ),
+            PartitionedRateLimiter.Create<HttpContext, string>(partitioner =>
+            {
+                var userAgent = partitioner.Request.Headers.UserAgent.ToString();
+                return RateLimitPartition.GetFixedWindowLimiter(userAgent, context => new FixedWindowRateLimiterOptions
+                {
+                    PermitLimit = genrealRateLimitingOptions.GlobalPermitLimit,
+                    Window = TimeSpan.FromHours(1),
+                    QueueProcessingOrder = QueueProcessingOrder.OldestFirst
+                });
+            }));
+            
+
+
+              
+}   
+
+
+
+
+
+    );
 // Add services to the container.
-
 builder.Services.AddControllers();
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
 builder.Services.AddDbContext<MyAppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddMemoryCache();
 //SERVICIOS Y REPOSITORIOS
 builder.Services.AddScoped<ICategoryRepository, CategoryRepository>();
 builder.Services.AddScoped<ICategoryService, CategoryService>();
@@ -103,6 +187,7 @@ builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IRoleRepository, RoleRepository>();
 builder.Services.AddScoped<IRoleService, RoleService>();
 builder.Services.AddScoped<IAuthService, AuthService>();
+//Use memory cache
 
 //Rate limiting
 
@@ -149,8 +234,8 @@ if (app.Environment.IsDevelopment())
 
 }
     app.UseHttpsRedirection();
-
-    app.UseAuthentication();
+    app.UseRateLimiter();
+app.UseAuthentication();
     app.UseAuthorization();
     app.UseRateLimiter();
 

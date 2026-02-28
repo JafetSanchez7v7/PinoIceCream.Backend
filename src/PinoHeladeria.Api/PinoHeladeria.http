@@ -1,6 +1,6 @@
-@PinoHeladeria_HostAddress = http://localhost:5281
+@PinoHeladeria_HostAddress = https://127.0.0.1:7106
 
-GET {{PinoHeladeria_HostAddress}}/weatherforecast/
+GET {{PinoHeladeria_HostAddress}}/Products/
 Accept: application/json
 
 ###

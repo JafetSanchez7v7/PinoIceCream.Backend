@@ -14,21 +14,19 @@ namespace PinoHeladeria.Application.Services
 {
     public class CategoryService : ICategoryService
     {
-        private readonly ICategoryRepository _categoryRepo;
         private readonly IMapper _mapper;
         private readonly IUnitOfWork _context;
        
 
         public CategoryService(ICategoryRepository repo, IMapper map,IUnitOfWork context)
         {
-            _categoryRepo = repo;
             _mapper = map;
             _context = context;
         }
 
         public async Task<IEnumerable<CategoryDto>>GetAllCategoriesAsync()
         {
-            var categories = await _categoryRepo.GetAllCategoriesAsync();
+            var categories = await _context.CategoriesI.GetAllCategoriesAsync();
             if(!categories.Any())
             {
                 throw new NoContentException("No hay Categorias existentes");
@@ -41,7 +39,7 @@ namespace PinoHeladeria.Application.Services
         }
         public async Task<CategoryDto>FindCatAsync(int categoryId)
         {
-            var category = await _categoryRepo.FindCatAsync(categoryId);
+            var category = await _context.CategoriesI.FindCatAsync(categoryId);
             if (category == null)
             {
                 throw new NotFoundException($"La categoria con Id {categoryId} no fue encontrada");
@@ -54,7 +52,7 @@ namespace PinoHeladeria.Application.Services
 
         public async Task<CategoryDto>FindByNameAsync(string categoryName)
         {
-            var category = await _categoryRepo.FindByNameAsync(categoryName);
+            var category = await _context.CategoriesI.FindByNameAsync(categoryName);
             if (category == null)
             {
                 throw new NotFoundException($"La categoria con nombre {categoryName} no fue encontrada");
@@ -69,7 +67,7 @@ namespace PinoHeladeria.Application.Services
         {
 
             
-            var existingCategory = await _categoryRepo.FindByNameAsync(category.CategoryName);
+            var existingCategory = await _context.CategoriesI.FindByNameAsync(category.CategoryName);
             if (existingCategory != null)
             {
                 throw new ConflictException($"La categoria con nombre {category.CategoryName} ya existe");
@@ -78,7 +76,7 @@ namespace PinoHeladeria.Application.Services
             //mapeo de dto a entidad
             var categoryEntity = _mapper.Map<Categories>(category);
 
-            var addedCategory = await _categoryRepo.AddAsync(categoryEntity);
+            var addedCategory = await _context.CategoriesI.AddAsync(categoryEntity);
             if (addedCategory != null)
             {
                 await _context.SaveChangesAsync();
@@ -93,7 +91,7 @@ namespace PinoHeladeria.Application.Services
 
         public async Task<CategoryDto> UpdateAsync(int categoryId, UpdateCategoryDto dto)
         {
-            var category = await _categoryRepo.FindAsTrackingAsync(categoryId);
+            var category = await _context.CategoriesI.FindAsTrackingAsync(categoryId);
             if (category == null)
             {
                 throw new NotFoundException($"La categoria con Id {categoryId} no existe");
@@ -104,21 +102,23 @@ namespace PinoHeladeria.Application.Services
             category.Description = dto.Description;
             category.IsActive = dto.IsActive;
             
-            var existingCategory = await _categoryRepo.FindByNameAsync(dto.CategoryName);
-            if (existingCategory != null)
+            var existingCategory = await _context.CategoriesI.FindByNameAsync(dto.CategoryName);
+            if (existingCategory != null && existingCategory.CategoryId == categoryId )
             {
                 throw new ConflictException($"La categoria con nombre {dto.CategoryName} ya existe");
             }
             
+                
+            string oldName = category.CategoryName;
+            await _context.CategoriesI.UpdateAsync(category, oldName);
             
-                await _context.SaveChangesAsync();
-                return _mapper.Map<CategoryDto>(category);
+            return _mapper.Map<CategoryDto>(category);
           
         }
 
         public async Task<CategoryDto> UpdateStatusAsync(int categoryId, UpdateStatusCatDto dto)
         {
-            var category = await _categoryRepo.FindAsTrackingAsync(categoryId);
+            var category = await _context.CategoriesI.FindAsTrackingAsync(categoryId);
             if (category == null)
             {
                 throw new NotFoundException($"La categoria con Id {categoryId} no existe");
@@ -132,13 +132,13 @@ namespace PinoHeladeria.Application.Services
             }
             //logica
             category.IsActive = dto.IsActive;
-            await _context.SaveChangesAsync();
+            await _context.CategoriesI.UpdateAsync(category);
             return _mapper.Map<CategoryDto>(category);
         }
 
         public async Task<IEnumerable<CategoryDto>>GetActiveCategoriesAsync()
         {
-            var categories = await _categoryRepo.GetActiveCategoriesAsync();
+            var categories = await _context.CategoriesI.GetActiveCategoriesAsync();
             if (!categories.Any())
                 throw new NoContentException("No hay Categorias Activas Registradas");
 

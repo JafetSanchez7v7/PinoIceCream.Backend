@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PinoHeladeria.Application.DTOs.PurchasesDtos;
 using PinoHeladeria.Application.Services_Interfaces;
@@ -15,6 +16,8 @@ namespace PinoHeladeria.API.Controllers
             _purchasesService = ser;
         }
         [HttpPost]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> AddPurchase([FromBody] CreatePurchaseDto dto)
         {
             var result = await _purchasesService.AddAsync(dto);

@@ -65,18 +65,18 @@ namespace PinoHeladeria.Application.Services
             return _mapper.Map<InventoryDto>(response);
         }
 
-        public async Task<IEnumerable<InventoryDto>>GetByStockFilterAsync(int filter)
+        public async Task<IEnumerable<InventoryDto>>GetByStockFilterAsync(int up, int down)
         {
             var errors = new List<string>();
-            if (filter <= 0)
+            if (down <= 0)
                 errors.Add("Ingrese un numero valido este no puede ser igual a 0");
                 
             if (errors.Any())
                 throw new ErrorValidationException(errors);
 
-            var response = await _inventoryRepository.GetByStockFilterAsync(filter);
+            var response = await _inventoryRepository.GetByStockFilterAsync(up,down);
             if(response == null)
-                throw new NoContentException($"No hay inventarios con stock menor que el filtro proporiconado: {filter}");
+                throw new NoContentException("No hay inventarios con stock menor que el filtro proporiconado");
 
             return _mapper.Map<IEnumerable<InventoryDto>>(response);
 

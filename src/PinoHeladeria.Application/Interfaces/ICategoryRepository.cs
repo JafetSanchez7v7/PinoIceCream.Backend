@@ -15,6 +15,6 @@ namespace PinoHeladeria.Application.Interfaces
         Task<Categories> AddAsync(Categories category);
         Task<IEnumerable<Categories>> GetActiveCategoriesAsync();
         Task<Categories> FindAsTrackingAsync(int id);
-
+        Task UpdateAsync(Categories category, string oldName = null);
     }
 }

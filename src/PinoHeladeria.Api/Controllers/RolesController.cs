@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PinoHeladeria.Application.DTOs.RolesDtos;
 using PinoHeladeria.Application.Services_Interfaces;
@@ -16,6 +17,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> GetAll()
         {
             var response = await _service.GetAllRolesAsync();
@@ -28,6 +31,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet("Actives")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> GetActiveRoles()
         {
             var response = await _service.GetActiveRolesAsync();
@@ -40,6 +45,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet("{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> GetById(int id)
         {
             var response = await _service.GetRoleByIdAsync(id);
@@ -52,6 +59,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpGet("{name}/byName")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> GetByName(string name)
         {
             var response = await _service.GetByNameAsync(name);
@@ -64,6 +73,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> AddRole([FromBody] CreateRoleDto dto)
         {
             var response = await _service.AddAsync(dto);
@@ -72,6 +83,8 @@ namespace PinoHeladeria.API.Controllers
             return CreatedAtAction(nameof(GetById), new { id = response.RoleId }, apiResp);
         }
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> Update(int id, [FromBody] UpdateRoleDto dto)
         {
             var response = await _service.UpdateAsync(id, dto);
@@ -82,6 +95,8 @@ namespace PinoHeladeria.API.Controllers
         }
 
         [HttpPatch("{id}")]
+        [Authorize(Roles = "Admin, Salesman")]
+
         public async Task<IActionResult> UpdateStatus(int id, [FromBody] UpdateRoleStatusDto dto)
         {
             var response = await _service.UpdateStatusAsync(id, dto);

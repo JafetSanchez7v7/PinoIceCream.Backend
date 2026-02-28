@@ -17,7 +17,7 @@ namespace PinoHeladeria.API.Controllers
             _login = log;
         }
         [HttpPost("login")]
-        [EnableRateLimiting("LoginPolicy")]
+        [EnableRateLimiting("Fixed ")]
         public async Task<IActionResult>Login(LoginRequestDto loginRequest)
         {
             var response = await _login.Login(loginRequest);

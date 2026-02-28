@@ -15,5 +15,7 @@ namespace PinoHeladeria.Application.Interfaces
         Task<Customers>AddAsync(Customers customer);
         Task<IEnumerable<Customers>> GetActiveCustomersAsync();
         Task<Customers?> GetToUpdate(int customerId);
+
+        Task UpdateAsync(Customers customer, string? oldName = null);
     }
 }

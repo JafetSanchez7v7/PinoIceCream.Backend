@@ -238,7 +238,7 @@
   {
     "ContainingType": "PinoHeladeria.API.Controllers.InventoriesController",
     "Method": "ById",
-    "RelativePath": "api/Inventories/{id}/ById",
+    "RelativePath": "api/Inventories/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -292,6 +292,16 @@
     "ContainingType": "PinoHeladeria.API.Controllers.InventoriesController",
     "Method": "GetAll",
     "RelativePath": "api/Inventories/GetAll",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "PinoHeladeria.API.Controllers.ProductsController",
+    "Method": "GetAllProducts",
+    "RelativePath": "api/Products",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -375,16 +385,6 @@
         "IsRequired": true
       }
     ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "PinoHeladeria.API.Controllers.ProductsController",
-    "Method": "GetAllProducts",
-    "RelativePath": "api/Products/GetAllProducts",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
     "ReturnTypes": []
   },
   {

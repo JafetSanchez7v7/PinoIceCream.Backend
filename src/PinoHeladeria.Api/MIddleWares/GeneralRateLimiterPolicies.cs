@@ -2,10 +2,10 @@
 {
     public class GeneralRateLimiterPolicies
     {
-        public const string RateLimiterPolicy = "RateLimiterPolicies";
+        public const string RateLimitPolicies = "RateLimitPolicies";
         public string? FixedPolicy { get; set; }
         public string? ConcurrentPolicy { get; set; }
-        public string? SlidingPolicy { get; set; }
-        public string? TokenPolicy { get; set; }
+        public string? SlidingWindowPolicy { get; set; }
+        public string? TokenBucketPolicy { get; set; }
     }
 }

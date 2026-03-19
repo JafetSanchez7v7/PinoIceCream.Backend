@@ -1,7 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using PinoHeladeria.Application.Interfaces;
 using PinoHeladeria.Domain.Entities;
 using PinoHeladeria.Infrastucture.AppDbContext;
+using PinoHeladeria.Infrastucture.CacheKeys;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -14,37 +16,63 @@ namespace PinoHeladeria.Infrastucture.Repositories
     public class ProductRepository : IProductRepository
     {
         private readonly MyAppDbContext _context;
-        public ProductRepository(MyAppDbContext con)
+        private readonly IMemoryCache _cache;
+
+        public ProductRepository(MyAppDbContext con, IMemoryCache cache)
         {
             _context = con;
+            _cache = cache;
         }
 
         public async Task<IEnumerable<Products>> GetAllAsync()
         {
-            var returned = await _context.Products.
-                AsNoTracking()
-                .Include(c=> c.Category).
-                Include(s => s.Supplier)
-                .ToListAsync();
-            return returned;
+            var key = $"{ProductCacheKeys.ProductList}";
+            if (!_cache.TryGetValue(key, out List<Products> cachedProducts))
+            {
+                cachedProducts = await _context.Products
+                    .AsNoTracking()
+                    .Include(c => c.Category)
+                    .Include(s => s.Supplier)
+                    .ToListAsync();
+                var cacheEntryOptions = new MemoryCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(30))
+                    .SetAbsoluteExpiration(TimeSpan.FromHours(1));
+                _cache.Set(key, cachedProducts, cacheEntryOptions);
+            }
+            return cachedProducts;
         }
         public async Task<Products> GetByIdAsync(int productId)
         {
-            var returned = await _context.Products.
-                AsNoTracking().
-                Include(c=> c.Category).
-                Include(s => s.Supplier).
-                FirstOrDefaultAsync(p => p.ProductId == productId);
-            return returned;
+            var key = $"{ProductCacheKeys.ProductByIdKey}{productId}";
+            if(!_cache.TryGetValue(key, out Products cachedId))
+            {
+                cachedId = await _context.Products.AsNoTracking()
+                    . Include(c => c.Category)
+                    .Include(s => s.Supplier)
+                    .FirstOrDefaultAsync(p => p.ProductId == productId);
+                var cacheEntryOptions = new MemoryCacheEntryOptions().SetSlidingExpiration(TimeSpan.FromMinutes(30)).
+                    SetAbsoluteExpiration(TimeSpan.FromHours(1));
+                _cache.Set(key, cachedId, cacheEntryOptions);
+            }
+            return cachedId;
         }
         public async Task<Products> GetByNameAsync(string productName)
         {
-            var returned = await _context.Products.
-                AsNoTracking().
-                Include(c => c.Category).
-                Include(s => s.Supplier).
-                FirstOrDefaultAsync(p => p.ProductName == productName);
-            return returned;
+            var key = $"{ProductCacheKeys.ProductByNameKey}{productName}";
+            if (!_cache.TryGetValue(key, out Products cachedProduct))
+            {
+                cachedProduct = await _context.Products
+                    .AsNoTracking()
+                    .Include(c => c.Category)
+                    .Include(s => s.Supplier)
+                    .FirstOrDefaultAsync(p => p.ProductName == productName);
+                var cacheEntryOptions = new MemoryCacheEntryOptions().
+                   SetSlidingExpiration(TimeSpan.FromMinutes(30)).
+                   SetAbsoluteExpiration(TimeSpan.FromHours(1));
+                _cache.Set(key, cachedProduct, cacheEntryOptions);
+
+            }
+            return cachedProduct;
         }
         public async Task<Products> AddAsync(Products product)
         {

@@ -35,7 +35,7 @@ namespace PinoHeladeria.Infrastucture.Repositories
             return sale;
         }
 
-        public async Task<IEnumerable<Sales>> GetByCustomer(int customerId)
+        public async Task<IEnumerable<Sales>> GetByCustomerAsync(int customerId)
         {
             var sale = await _context.Sales
                 .AsNoTracking()
@@ -45,7 +45,7 @@ namespace PinoHeladeria.Infrastucture.Repositories
 
             return sale ;
         }
-        public async Task<IEnumerable<Sales>> GetByDateRange(DateTime startDate, DateTime endDate)
+        public async Task<IEnumerable<Sales>> GetByDateRangeAsync(DateTime startDate, DateTime endDate)
         {
            var sales = await _context.Sales
                 .AsNoTracking()

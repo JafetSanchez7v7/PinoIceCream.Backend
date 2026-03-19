@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PinoHeladeria.Application.DTOs.UsersDtos;
 using PinoHeladeria.Application.Services_Interfaces;
@@ -7,6 +8,8 @@ namespace PinoHeladeria.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize(Roles = "Admin")]
+
     public class UsersController : ControllerBase
     {
         private readonly IUserService _userService;
@@ -15,6 +18,7 @@ namespace PinoHeladeria.API.Controllers
             _userService = ser;
         }
         [HttpGet]
+
         public async Task<IActionResult> GetAllUsers()
         {
             var users = await _userService.GetAllAsync();

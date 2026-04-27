@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.RateLimiting;
 using PinoHeladeria.Application.DTOs;
 using PinoHeladeria.Application.DTOs.CategoryDtos;
 using PinoHeladeria.Application.Services_Interfaces;
@@ -11,6 +12,9 @@ namespace PinoHeladeria.API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+
+
+    [EnableRateLimiting("Fixed")]
     public class CategoriesController : ControllerBase
     {
         private readonly ICategoryService _categoryService;

@@ -19,12 +19,13 @@ using System.Threading.RateLimiting;
 var builder = WebApplication.CreateBuilder(args);
 
 var jwtSettings = builder.Configuration.GetSection("JwtSettings");
-builder.Services.Configure<GeneralRateLimiterPolicies>(jwtSettings.GetSection(GeneralRateLimiterPolicies.RateLimiterPolicy));
+builder.Services.Configure<GeneralRateLimiterPolicies>(jwtSettings.GetSection(GeneralRateLimiterPolicies.RateLimitPolicies));
 builder.Services.Configure<GeneralRateLimiterOptions>(jwtSettings.GetSection(GeneralRateLimiterOptions.RateLimiting));
 var secretKey = jwtSettings["SecretKey"];
 var generalRateLimitingPolicies = new GeneralRateLimiterPolicies();
+Console.WriteLine(generalRateLimitingPolicies.FixedPolicy?? "es nulo");
 var genrealRateLimitingOptions = new GeneralRateLimiterOptions();
-builder.Configuration.GetSection(GeneralRateLimiterPolicies.RateLimiterPolicy).Bind(generalRateLimitingPolicies);
+builder.Configuration.GetSection(GeneralRateLimiterPolicies.RateLimitPolicies).Bind(generalRateLimitingPolicies);
 builder.Configuration.GetSection(GeneralRateLimiterOptions.RateLimiting).Bind(genrealRateLimitingOptions);
 
 builder.Services.AddAuthentication(options =>
@@ -98,7 +99,7 @@ builder.Services.AddOpenApi(options =>
         opt.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
         });
 
-        options.AddSlidingWindowLimiter(generalRateLimitingPolicies.SlidingPolicy ?? throw new InvalidOperationException(), opt =>
+        options.AddSlidingWindowLimiter(generalRateLimitingPolicies.SlidingWindowPolicy ?? throw new InvalidOperationException(), opt =>
         {
         opt.PermitLimit = genrealRateLimitingOptions.PermitLimit;
         opt.Window = TimeSpan.FromSeconds(genrealRateLimitingOptions.Window);
@@ -106,7 +107,7 @@ builder.Services.AddOpenApi(options =>
         opt.QueueProcessingOrder = QueueProcessingOrder.OldestFirst;
         });
 
-        options.AddTokenBucketLimiter(generalRateLimitingPolicies.TokenPolicy ?? throw new InvalidOperationException(), opt =>
+        options.AddTokenBucketLimiter(generalRateLimitingPolicies.TokenBucketPolicy ?? throw new InvalidOperationException(), opt =>
         {
             opt.TokenLimit = genrealRateLimitingOptions.TokenLimit;
             opt.ReplenishmentPeriod = TimeSpan.FromSeconds(genrealRateLimitingOptions.ReplenishmentPeriod);

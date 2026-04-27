@@ -3,96 +3,12 @@
   "WorkspaceRootPath": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\conflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\conflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\adbcontext\\myappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\adbcontext\\myappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\interfaces\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\middlewares\\generalratelimiteroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\middlewares\\generalratelimiteroptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\authcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\authcontroler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\middlewares\\generalratelimiterpolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\middlewares\\generalratelimiterpolicies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\mappingsprofiles\\suppliersprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\mappingsprofiles\\suppliersprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\mappingsprofiles\\usersprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\mappingsprofiles\\usersprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\mappingsprofiles\\salesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\mappingsprofiles\\salesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\mappingsprofiles\\roleprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\mappingsprofiles\\roleprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\mappingsprofiles\\purchasesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\mappingsprofiles\\purchasesprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\mappingsprofiles\\productprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\mappingsprofiles\\productprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\mappingsprofiles\\inventoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\mappingsprofiles\\inventoryprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\mappingsprofiles\\categoryprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\mappingsprofiles\\categoryprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\pinoheladeria.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\pinoheladeria.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -103,108 +19,56 @@
       "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\services\\saleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\dtos\\productdtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\dtos\\productdtos\\productdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\cachekeys\\productcachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\cachekeys\\productcachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\services\\categoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\interfaces\\iproductrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\repositories\\customersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\repositories\\customersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\errorvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\errorvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\notfoundexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\unauthorizedexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\nocontentexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\nocontentexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\databaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\databaseexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\cachekeys\\categorycachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\cachekeys\\categorycachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\middlewares\\exceptionhandlingmiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\productscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\repositories\\inventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\repositories\\inventoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\adbcontext\\myappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\adbcontext\\myappdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\services\\inventoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\apiexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\cachekeys\\inventorycachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\cachekeys\\inventorycachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\mappingsprofiles\\categoryprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\mappingsprofiles\\categoryprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\cachekeys\\customerscachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\cachekeys\\customerscachekeys.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.infrastucture\\repositories\\salesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EB9DBFBA-79B9-9E8F-EEF0-AFFD32118098}|src\\PinoHeladeria.Infrastucture\\PinoHeladeria.Infrastucture.csproj|solutionrelative:src\\pinoheladeria.infrastucture\\repositories\\salesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\errorvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\errorvalidationexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7C60013F-433E-63C6-2848-82D79164134B}|src\\PinoHeladeria.Domain\\PinoHeladeria.Domain.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.domain\\entities\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7C60013F-433E-63C6-2848-82D79164134B}|src\\PinoHeladeria.Domain\\PinoHeladeria.Domain.csproj|solutionrelative:src\\pinoheladeria.domain\\entities\\sales.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\interfaces\\icustomersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\interfaces\\icustomersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\services interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\services interfaces\\icategoryservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\pinoheladeria.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\pinoheladeria.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\services\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\salescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\rolescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\purchasescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\inventoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\inventoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{FA816124-815E-9771-31B5-D456C649A6A7}|src\\PinoHeladeria.Api\\PinoHeladeria.API.csproj|solutionrelative:src\\pinoheladeria.api\\controllers\\customerscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|c:\\uni\\programacion 2\\pinoicecream.backend\\src\\pinoheladeria.application\\exceptions\\conflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{285506EC-7C32-EF61-4572-291E7E3420D8}|src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj|solutionrelative:src\\pinoheladeria.application\\exceptions\\conflictexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -213,50 +77,9 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 179,
+          "DockedWidth": 200,
           "SelectedChildIndex": 9,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Program.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Program.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Program.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Program.cs",
-              "ViewState": "AgIAAJ8AAAAAAAAAAAAAAOcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-02T01:03:32.313Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CategoryRepository.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\CategoryRepository.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\Repositories\\CategoryRepository.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\CategoryRepository.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\Repositories\\CategoryRepository.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T04:56:33.798Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ICategoryRepository.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Interfaces\\ICategoryRepository.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Interfaces\\ICategoryRepository.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Interfaces\\ICategoryRepository.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Interfaces\\ICategoryRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T01:58:39.992Z",
-              "IsPinned": true
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
@@ -267,224 +90,172 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "ApiException.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\ApiException.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Exceptions\\ApiException.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\ApiException.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Exceptions\\ApiException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:54:26.264Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "ConflictException.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\ConflictException.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Exceptions\\ConflictException.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\ConflictException.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Exceptions\\ConflictException.cs",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Program.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Program.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Program.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Api\\Program.cs",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T16:38:26.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SaleService.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\SaleService.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Services\\SaleService.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\SaleService.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Application\\Services\\SaleService.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-16T18:28:37.219Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Interfaces\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Interfaces\\IProductRepository.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Interfaces\\IProductRepository.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Application\\Interfaces\\IProductRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:54:34.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-12T14:48:48.911Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductCacheKeys.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\ProductCacheKeys.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\ProductCacheKeys.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\ProductCacheKeys.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\ProductCacheKeys.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T14:18:13.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\Repositories\\ProductRepository.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAIwGUAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-12T14:16:31.225Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAowFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T15:07:28.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T15:04:28.247Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CustomersRepository.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\CustomersRepository.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\Repositories\\CustomersRepository.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\CustomersRepository.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\Repositories\\CustomersRepository.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T14:59:29.574Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "ExceptionHandlingMiddleware.cs",
               "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\MIddleWares\\ExceptionHandlingMiddleware.cs",
               "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\MIddleWares\\ExceptionHandlingMiddleware.cs",
               "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\MIddleWares\\ExceptionHandlingMiddleware.cs",
               "RelativeToolTip": "src\\PinoHeladeria.Api\\MIddleWares\\ExceptionHandlingMiddleware.cs",
-              "ViewState": "AgIAABUAAAAAAAAAAAAowD8AAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAABAAAAAAAAAAAAAtwBIAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T23:31:51.877Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-10T15:08:11.336Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
+              "Title": "ProductsController.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\ProductsController.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\ProductsController.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\ProductsController.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\ProductsController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T15:18:39.393Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CategoryCacheKeys.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\CategoryCacheKeys.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\CategoryCacheKeys.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\CategoryCacheKeys.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\CategoryCacheKeys.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-10T15:01:12.902Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "MyAppDbContext.cs",
               "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\ADbContext\\MyAppDbContext.cs",
               "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\ADbContext\\MyAppDbContext.cs",
               "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\ADbContext\\MyAppDbContext.cs",
               "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\ADbContext\\MyAppDbContext.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAQwEAAAABXAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:52:14.015Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Properties\\launchSettings.json",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Properties\\launchSettings.json",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Properties\\launchSettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-22T20:30:17.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GeneralRateLimiterOptions.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\MIddleWares\\GeneralRateLimiterOptions.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\MIddleWares\\GeneralRateLimiterOptions.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\MIddleWares\\GeneralRateLimiterOptions.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\MIddleWares\\GeneralRateLimiterOptions.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T19:22:32.773Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\appsettings.Development.json",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\appsettings.Development.json",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\appsettings.Development.json",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAsAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-11T13:50:57.718Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AuthControler.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\AuthControler.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\AuthControler.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\AuthControler.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\AuthControler.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABMAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:33:57.564Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GeneralRateLimiterPolicies.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\MIddleWares\\GeneralRateLimiterPolicies.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\MIddleWares\\GeneralRateLimiterPolicies.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\MIddleWares\\GeneralRateLimiterPolicies.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\MIddleWares\\GeneralRateLimiterPolicies.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAABEAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-25T19:19:26.543Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\appsettings.json",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\appsettings.json",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\appsettings.json",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2026-02-11T13:51:21.367Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "SuppliersProfile.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\SuppliersProfile.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\MappingsProfiles\\SuppliersProfile.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\SuppliersProfile.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\MappingsProfiles\\SuppliersProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T00:45:36.843Z"
+              "WhenOpened": "2026-03-10T15:25:07.999Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 14,
-              "Title": "UsersProfile.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\UsersProfile.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\MappingsProfiles\\UsersProfile.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\UsersProfile.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\MappingsProfiles\\UsersProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Title": "IUnitOfWork.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Interfaces\\IUnitOfWork.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Interfaces\\IUnitOfWork.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Interfaces\\IUnitOfWork.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Application\\Interfaces\\IUnitOfWork.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAxwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T00:45:33.917Z"
+              "WhenOpened": "2026-03-10T15:06:55.264Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "RoleProfile.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\RoleProfile.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\MappingsProfiles\\RoleProfile.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\RoleProfile.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\MappingsProfiles\\RoleProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T00:45:28.139Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PurchasesProfile.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\PurchasesProfile.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\MappingsProfiles\\PurchasesProfile.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\PurchasesProfile.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\MappingsProfiles\\PurchasesProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T00:45:25.241Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "SalesProfile.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\SalesProfile.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\MappingsProfiles\\SalesProfile.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\SalesProfile.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\MappingsProfiles\\SalesProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T00:45:02.972Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ProductProfiles.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\ProductProfiles.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\MappingsProfiles\\ProductProfiles.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\ProductProfiles.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\MappingsProfiles\\ProductProfiles.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T00:45:24.414Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "InventoryProfile.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\InventoryProfile.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\MappingsProfiles\\InventoryProfile.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\InventoryProfile.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\MappingsProfiles\\InventoryProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-23T00:45:20.135Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 13,
               "Title": "CategoryProfiles.cs",
               "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\MappingsProfiles\\CategoryProfiles.cs",
               "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\MappingsProfiles\\CategoryProfiles.cs",
@@ -492,131 +263,11 @@
               "RelativeToolTip": "src\\PinoHeladeria.Application\\MappingsProfiles\\CategoryProfiles.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:54:12.518Z"
+              "WhenOpened": "2026-03-10T15:07:10.925Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "PinoHeladeria.http",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\PinoHeladeria.http",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\PinoHeladeria.http",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\PinoHeladeria.http",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\PinoHeladeria.http",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2026-02-22T20:29:31.289Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "ProductsController.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\ProductsController.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\ProductsController.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\ProductsController.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\ProductsController.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAgwBMAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:46:46.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ProductDto.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\DTOs\\ProductDtos\\ProductDto.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\DTOs\\ProductDtos\\ProductDto.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\DTOs\\ProductDtos\\ProductDto.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\DTOs\\ProductDtos\\ProductDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-22T03:56:43.79Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\Repositories\\ProductRepository.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAD4vyMAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-20T04:27:50.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "SaleService.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\SaleService.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Services\\SaleService.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\SaleService.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Services\\SaleService.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T15:17:41.664Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CategoryService.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\CategoryService.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Services\\CategoryService.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\CategoryService.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Services\\CategoryService.cs",
-              "ViewState": "AgIAAI4AAAAAAAAAAAAAwIsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-01T05:00:57.217Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "ProductService.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\ProductService.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Services\\ProductService.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\ProductService.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Services\\ProductService.cs",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAawE8AAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-12T03:48:08.342Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "UnauthorizedException.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\UnauthorizedException.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Exceptions\\UnauthorizedException.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\UnauthorizedException.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Exceptions\\UnauthorizedException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:54:57.481Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "NotFoundException.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\NotFoundException.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Exceptions\\NotFoundException.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\NotFoundException.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Exceptions\\NotFoundException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:54:55.791Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "NoContentException.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\NoContentException.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Exceptions\\NoContentException.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\NoContentException.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Exceptions\\NoContentException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:54:53.11Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 15,
               "Title": "ErrorValidationException.cs",
               "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\ErrorValidationException.cs",
               "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Exceptions\\ErrorValidationException.cs",
@@ -624,235 +275,31 @@
               "RelativeToolTip": "src\\PinoHeladeria.Application\\Exceptions\\ErrorValidationException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:54:40.502Z"
+              "WhenOpened": "2026-03-10T15:06:47.118Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "DataBaseException.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\DataBaseException.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Exceptions\\DataBaseException.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\DataBaseException.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Exceptions\\DataBaseException.cs",
+              "DocumentIndex": 12,
+              "Title": "ApiException.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\ApiException.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Exceptions\\ApiException.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\ApiException.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Application\\Exceptions\\ApiException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:54:38.464Z"
+              "WhenOpened": "2026-03-10T15:06:38.067Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "UsersController.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\UsersController.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\UsersController.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\UsersController.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\UsersController.cs",
-              "ViewState": "AgIAAD0AAAAAAAAAAAAcwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:53:50.903Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "CategoryCacheKeys.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\CategoryCacheKeys.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\CategoryCacheKeys.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\CategoryCacheKeys.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\CategoryCacheKeys.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T13:49:28.228Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\CategoriesController.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\CategoriesController.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAjwFAAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:34:00.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "InventoryRepository.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\InventoryRepository.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\Repositories\\InventoryRepository.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\InventoryRepository.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\Repositories\\InventoryRepository.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAAAEoAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T02:15:03.293Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "InventoryService.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\InventoryService.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Services\\InventoryService.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\InventoryService.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Services\\InventoryService.cs",
-              "ViewState": "AgIAADgAAAAAAAAAAAAIwE4AAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T04:42:36.856Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "InventoryCacheKeys.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\InventoryCacheKeys.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\InventoryCacheKeys.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\InventoryCacheKeys.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\InventoryCacheKeys.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T04:47:43.678Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "CustomersCacheKeys.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\CustomersCacheKeys.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\CustomersCacheKeys.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\CacheKeys\\CustomersCacheKeys.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\CacheKeys\\CustomersCacheKeys.cs",
+              "DocumentIndex": 16,
+              "Title": "ConflictException.cs",
+              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\ConflictException.cs",
+              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Exceptions\\ConflictException.cs",
+              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Exceptions\\ConflictException.cs",
+              "RelativeToolTip": "src\\PinoHeladeria.Application\\Exceptions\\ConflictException.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-11T02:17:18.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "SalesRepository.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\SalesRepository.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Infrastucture\\Repositories\\SalesRepository.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Infrastucture\\Repositories\\SalesRepository.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Infrastucture\\Repositories\\SalesRepository.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAUwDMAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-31T00:04:08.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "Sales.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Domain\\Entities\\Sales.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Domain\\Entities\\Sales.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Domain\\Entities\\Sales.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Domain\\Entities\\Sales.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T03:46:21.778Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "ICustomersRepository.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Interfaces\\ICustomersRepository.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Interfaces\\ICustomersRepository.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Interfaces\\ICustomersRepository.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Interfaces\\ICustomersRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T02:31:12.882Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "ICategoryService.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services Interfaces\\ICategoryService.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Services Interfaces\\ICategoryService.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services Interfaces\\ICategoryService.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Services Interfaces\\ICategoryService.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T01:48:44.377Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "PinoHeladeria.Application.csproj",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\PinoHeladeria.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-02-02T01:04:19.911Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "AuthService.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\AuthService.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Application\\Services\\AuthService.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Application\\Services\\AuthService.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Application\\Services\\AuthService.cs",
-              "ViewState": "AgIAADMAAAAAAAAAAAAWwEgAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:56:33.319Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "SalesController.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\SalesController.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\SalesController.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\SalesController.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\SalesController.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAowCkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:37:46.643Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "RolesController.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\RolesController.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\RolesController.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\RolesController.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\RolesController.cs",
-              "ViewState": "AgIAAE0AAAAAAAAAAAAcwGIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:50:52.622Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
-              "Title": "PurchasesController.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\PurchasesController.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\PurchasesController.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\PurchasesController.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\PurchasesController.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAQwBMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:50:27.645Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "InventoriesController.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\InventoriesController.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\InventoriesController.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\InventoriesController.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\InventoriesController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAIwD0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:45:49.122Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 50,
-              "Title": "CustomersController.cs",
-              "DocumentMoniker": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\CustomersController.cs",
-              "RelativeDocumentMoniker": "src\\PinoHeladeria.Api\\Controllers\\CustomersController.cs",
-              "ToolTip": "C:\\UNI\\Programacion 2\\PinoIceCream.Backend\\src\\PinoHeladeria.Api\\Controllers\\CustomersController.cs",
-              "RelativeToolTip": "src\\PinoHeladeria.Api\\Controllers\\CustomersController.cs",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAuwGYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-30T22:45:22.775Z"
+              "WhenOpened": "2026-03-10T15:06:42.731Z"
             }
           ]
         }

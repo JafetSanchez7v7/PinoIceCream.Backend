@@ -16,19 +16,12 @@ namespace PinoHeladeria.Application.Services
     public class SaleService : ISaleService
     {
         private readonly ISalesRepository _service;
-        private readonly IProductRepository _productRepository;
-        private readonly IInventoryRepository _inventoryRepository;
         private readonly IMapper _mapper;
-        private readonly ICustomersRepository _customersRepository;
         private readonly IUnitOfWork _unitOfWork;
 
         public SaleService(ISalesRepository sale, IInventoryRepository inv, IProductRepository prod, ICustomersRepository cus, IMapper map, IUnitOfWork unitOfWork)
         {
             _unitOfWork = unitOfWork;
-            _service = sale;
-            _inventoryRepository = inv;
-            _productRepository = prod;
-            _customersRepository = cus;
             _mapper = map;
         }
 
@@ -36,7 +29,7 @@ namespace PinoHeladeria.Application.Services
         {
             var errors = new List<string>();
             // validar el cliente
-            var existingCustomer = await _customersRepository.GetByIdAsync(sales.CustomerId);
+            var existingCustomer = await _unitOfWork.CustomersI.GetByIdAsync(sales.CustomerId);
             if (existingCustomer == null || !existingCustomer.IsActive)
             {
                 errors.Add($"Id del cliente :{sales.CustomerId} ivalido no se encontro o esta inactivo");
@@ -44,7 +37,7 @@ namespace PinoHeladeria.Application.Services
             }
             //validamos la existencia y actividad de los productos
             var productIdsToBuy = sales.SalesDetails.Select(d => d.ProductId).Distinct().ToList();
-            var productsInCatalog = await _productRepository.GetWhereAsync(p => productIdsToBuy.Contains(p.ProductId));
+            var productsInCatalog = await _unitOfWork.ProductsI.GetWhereAsync(p => productIdsToBuy.Contains(p.ProductId));
 
             if (productsInCatalog.Count() != productIdsToBuy.Count)
             {
@@ -70,7 +63,7 @@ namespace PinoHeladeria.Application.Services
                 {
                     foreach (var detail in saleEntity.SalesDetails)
                     {
-                        var inventory = await _inventoryRepository.UpdateProductStockAsync(detail.ProductId);
+                        var inventory = await _unitOfWork.InventoryI.UpdateProductStockAsync(detail.ProductId);
                         if(inventory == null)
                         {
                             errors.Add("No existe inventario para este producto");
@@ -91,7 +84,7 @@ namespace PinoHeladeria.Application.Services
                     saleEntity.SaleTotal = saleEntity.SalesDetails.Sum(d => d.Total);
                     saleEntity.SaleDate = DateTime.UtcNow;
                 }
-                var createdSale = await _service.AddAsync(saleEntity);
+                var createdSale = await _unitOfWork.SalesI.AddAsync(saleEntity);
                 await _unitOfWork.SaveChangesAsync();
                 await _unitOfWork.CommitTransactionAsync();
                 return _mapper.Map<SalesDto>(createdSale);
